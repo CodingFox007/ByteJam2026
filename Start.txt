@@ -1,3 +1,7 @@
 Team name: The Undead Programmers
 Cash Cooper was here
+<<<<<<< HEAD
 Caleb Seieroe has arrived
+=======
+Chalan participated
+>>>>>>> 90b5398b0fa290bd141fd8575738f68bcf2b5fee
