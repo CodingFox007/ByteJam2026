@@ -5,6 +5,7 @@
 - damage 1-3
 - - https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=4 - Grunt 1
 - - https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=4 - grunt.mp3
+- - https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=5 - Male Hurt Sound
 - death
 - punch 
 - - https://pixabay.com/sound-effects/search/punch/ - Classic Punch Impact
@@ -30,6 +31,7 @@
 - - - https://pixabay.com/sound-effects/search/zombie%20groan/ - Zombie Groan SFX
 - Defeat 
 - - Thud (Boss falls onto back)
+- - - https://pixabay.com/sound-effects/search/punch/?pagi=2 - Punch-kick
 - - Death
 - - - https://pixabay.com/sound-effects/search/zombie%20groan/ - Zombie Call
 
