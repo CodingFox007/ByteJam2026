@@ -17,7 +17,7 @@
 - - Slam (Attack form above)
 - - Swing (Attack from side)
 - Roar
-- - Pained
+- - Pained - https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=2 - Zombie Scream
 - - Angry - https://pixabay.com/sound-effects/search/zombie%20groan/ - Zombie Groan SFX
 - Defeat 
 - - Thud (Boss falls onto back)
