@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://b4si5l4nyy282"]
+
+[ext_resource type="Texture2D" uid="uid://dn2vb32l7iavn" path="res://LevelOneBackground/01_sky.png" id="1_ihfcg"]
+[ext_resource type="Texture2D" uid="uid://cwd0j2h7qncpf" path="res://LevelOneBackground/00_sun.png" id="2_rka8t"]
+[ext_resource type="Texture2D" uid="uid://d3p2ucmxheob2" path="res://LevelOneBackground/03_far.png" id="3_5hph3"]
+[ext_resource type="Texture2D" uid="uid://8yeev0vf1jfo" path="res://LevelOneBackground/04_mid.png" id="4_j7kpp"]
+
+[node name="Level1" type="Node2D" unique_id=926407240]
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=1879566310]
+scroll_offset = Vector2(177, -115)
+
+[node name="01Sky" type="Sprite2D" parent="Parallax2D" unique_id=1741661221]
+position = Vector2(766, 380)
+scale = Vector2(1, 1.6462963)
+texture = ExtResource("1_ihfcg")
+
+[node name="00Sun" type="Sprite2D" parent="Parallax2D" unique_id=1349859013]
+position = Vector2(189, 181)
+texture = ExtResource("2_rka8t")
+
+[node name="03Far" type="Sprite2D" parent="Parallax2D" unique_id=1126672782]
+position = Vector2(783, 496)
+texture = ExtResource("3_5hph3")
+
+[node name="04Mid" type="Sprite2D" parent="Parallax2D" unique_id=1747949815]
+position = Vector2(811, 486)
+texture = ExtResource("4_j7kpp")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1797546238]
