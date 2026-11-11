@@ -144,6 +144,12 @@ transfer into .wav files
 </details>
 </details>
 
+<details>
+<summary>Special</summary>
+
+- https://www.101soundboards.com/sounds/24325943-kazotsky-kick - kazotsky kick
+</details>
+
 <hr><!-- ------------------------------------ -->
 
 ## Environment <!-- Done -->
@@ -197,7 +203,8 @@ transfer into .wav files
 <details>
 <summary>Background</summary>
 
-- _ _
+- https://pixabay.com/sound-effects/search/background%20music/ - Corporate Background Music
+- https://pixabay.com/sound-effects/search/elevator%20music/ - EndingElevator
 </details>
 
 <details>
@@ -211,18 +218,20 @@ transfer into .wav files
 <details open>
 <summary>> Background</summary>
 
-- _ _
+- https://pixabay.com/sound-effects/search/womp%20womp%20trumpet/ - Trumpet piano viola
 </details>
 <details open>
 <summary>> Victory</summary>
 
 - https://teslalocksound.com/sounds/mario-wins
 </details>
-<details open>
-<summary>> Defeat</summary>
 
-- _ _
 </details>
+<details>
+<summary>Defeat</summary>
+
+- https://pixabay.com/sound-effects/search/womp%20womp%20trumpet/ - Sad Trumpet
+- https://pixabay.com/sound-effects/search/womp%20womp%20trumpet/ - Failure Trumpet
 </details>
 
 <!-- 
