@@ -24,6 +24,7 @@
 ## Boss
 - Attack
 - - Slam (Attack form above)
+- - - https://pixabay.com/sound-effects/search/thud%20dull/?pagi=4 - Table Smash
 - - Swing (Attack from side)
 - Roar
 - - Pained 
