@@ -1,64 +1,100 @@
 # Sounds
 transfer into .wav files
+
+## Player
 <details>
-<summary>Player</summary>
-<details>
-<summary>damage</summary>
+<summary>Damage</summary>
 
 - https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=4 - Grunt 1
 - https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=4 - grunt.mp3
 - https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=5 - Male Hurt Sound
 </details>
-
 <details>
-<summary>death</summary>
+<summary>Death</summary>
 
 - https://pixabay.com/sound-effects/search/death%20groan/ - Dramatic Death Collapse
 - https://pixabay.com/sound-effects/search/death%20groan/ - Male Death Scream
 </details>
-
 <details>
-<summary>punch</summary>
+<summary>Punch</summary>
+
 - https://pixabay.com/sound-effects/search/punch/ - Classic Punch Impact
 </details>
-</details>
 
+<hr>
+
+## Zombie/enemy
 <details>
-<summary>Zombie/enemy</summary>
+<summary>Damage</summary>
 
-- damage 1-3
 - - https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=4 - aaaaeuuuuuuuuugh
 - - https://pixabay.com/sound-effects/search/zombie%20hurt%20groan/?duration=0-30 - Male Hurt Sound
-- death
-- - https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=7 - Zombie Death 2
-- - https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=9 - monster death grunt
-- groans
-- - https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=2 - Zombie Voice - Growl
-- - https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=3 - Monster Groan
-- bite
-- - - https://pixabay.com/sound-effects/search/zombie%20bite/ - Zombie Bite
+</details>
+<details>
+<summary>Death</summary>
+
+- https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=7 - Zombie Death 2
+- https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=9 - monster death grunt
+</details>
+<details>
+<summary>Groans</summary>
+
+- https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=2 - Zombie Voice - Growl
+- https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=3 - Monster Groan
+</details>
+<details>
+<summary>Bite</summary>
+
+- https://pixabay.com/sound-effects/search/zombie%20bite/ - Zombie Bite
+</details>
+
+<hr>
+
+## Boss
+<details>
+<summary>Attack</summary>
+<details>
+<summary>- Slam (Attack from above)</summary>
+
+- https://pixabay.com/sound-effects/search/thud%20dull/?pagi=4 - Table Smash
+</details>
+<details>
+<summary>- Swing (Attack from side)</summary>
+
+- https://pixabay.com/sound-effects/search/wind%20woosh%20heavy/?pagi=2 - Woosh long Cartoon
+</details> 
 </details>
 
 <details>
-<summary>Boss</summary>
+<summary>Roar</summary>
+<details>
+<summary>- Pained</summary>
 
-- Attack
-- - Slam (Attack from above)
-- - - https://pixabay.com/sound-effects/search/thud%20dull/?pagi=4 - Table Smash
-- - Swing (Attack from side)
-- - - https://pixabay.com/sound-effects/search/wind%20woosh%20heavy/?pagi=2 - Woosh long Cartoon
-- Roar
-- - Pained 
-- - - https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=2 - Zombie Scream
-- - - https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=6 - Dragon Hurt
-- - Angry 
-- - - https://pixabay.com/sound-effects/search/zombie%20groan/ - Zombie Groan SFX
-- Defeat 
-- - Thud (Boss falls onto back)
-- - - https://pixabay.com/sound-effects/search/punch/?pagi=2 - Punch-kick
-- - Death
-- - - https://pixabay.com/sound-effects/search/zombie%20groan/ - Zombie Call
+- https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=2 - Zombie Scream
+- https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=6 - Dragon Hurt
 </details>
+<details>
+<summary>- Angry</summary>
+
+- https://pixabay.com/sound-effects/search/zombie%20groan/ - Zombie Groan SFX
+</details>
+</details>
+
+<details>
+<summary>Defeat</summary>
+<details>
+<summary>- Thud</summary>
+
+- https://pixabay.com/sound-effects/search/punch/?pagi=2 - Punch-kick
+</details>
+<details>
+<summary>- Death</summary>
+
+- https://pixabay.com/sound-effects/search/zombie%20groan/ - Zombie Call
+</details>
+</details>
+
+<hr>
 
 <details>
 <summary>Weapons</summary>
@@ -74,6 +110,8 @@ transfer into .wav files
 - - Throw
 - - Explosion
 </details>
+
+<hr>
 
 <details>
 <summary>Environment</summary>
@@ -97,6 +135,7 @@ transfer into .wav files
 - - - https://pixabay.com/sound-effects/search/cod%20mystery%20box/?duration=0-30 - boc crash
 </details>
 
+<hr>
 
 <details>
 <summary>Music</summary>
