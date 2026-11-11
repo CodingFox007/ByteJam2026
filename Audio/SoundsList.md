@@ -10,8 +10,8 @@
 
 ## Weapons
 - Gun
- - firing 1-2
- - reload
+- - firing 1-2
+- - reload
 - Blade
  - Swing
  - Collide
