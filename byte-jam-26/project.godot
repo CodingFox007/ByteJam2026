@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="ByteJam26Fork"
+config/name="ByteJam26"
 run/main_scene="uid://b4si5l4nyy282"
 config/features=PackedStringArray("4.7", "Forward Plus")
 
