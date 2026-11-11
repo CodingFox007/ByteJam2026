@@ -1,7 +1,7 @@
 # Sounds
 .wav files
-
-## Player
+<details>
+<summary>Player</summary>
 - damage 1-3
 - - https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=4 - Grunt 1
 - - https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=4 - grunt.mp3
@@ -11,6 +11,8 @@
 - - https://pixabay.com/sound-effects/search/death%20groan/ - Male Death Scream
 - punch 
 - - https://pixabay.com/sound-effects/search/punch/ - Classic Punch Impact
+</details>
+
 
 ## Zombie/enemy
 - damage 1-3
