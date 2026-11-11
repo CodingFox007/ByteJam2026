@@ -27,8 +27,8 @@ transfer into .wav files
 <details>
 <summary>Damage</summary>
 
-- - https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=4 - aaaaeuuuuuuuuugh
-- - https://pixabay.com/sound-effects/search/zombie%20hurt%20groan/?duration=0-30 - Male Hurt Sound
+- https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=4 - aaaaeuuuuuuuuugh
+- https://pixabay.com/sound-effects/search/zombie%20hurt%20groan/?duration=0-30 - Male Hurt Sound
 </details>
 <details>
 <summary>Death</summary>
