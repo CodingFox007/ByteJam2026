@@ -6,7 +6,8 @@
 - - https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=4 - Grunt 1
 - - https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=4 - grunt.mp3
 - death
-- punch - https://pixabay.com/sound-effects/search/punch/ - Classic Punch Impact
+- punch 
+- - https://pixabay.com/sound-effects/search/punch/ - Classic Punch Impact
 
 ## Zombie/enemy
 - damage 1-3
@@ -22,11 +23,15 @@
 - - Slam (Attack form above)
 - - Swing (Attack from side)
 - Roar
-- - Pained - https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=2 - Zombie Scream
-- - Angry - https://pixabay.com/sound-effects/search/zombie%20groan/ - Zombie Groan SFX
+- - Pained 
+- - - https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=2 - Zombie Scream
+- - - https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=6 - Dragon Hurt
+- - Angry 
+- - - https://pixabay.com/sound-effects/search/zombie%20groan/ - Zombie Groan SFX
 - Defeat 
 - - Thud (Boss falls onto back)
-- - Death - https://pixabay.com/sound-effects/search/zombie%20groan/ - Zombie Call
+- - Death
+- - - https://pixabay.com/sound-effects/search/zombie%20groan/ - Zombie Call
 
 ## Weapons
 - Gun
@@ -57,5 +62,6 @@
 - Box
 - boss fight
 - - Background
-- - Victory - https://teslalocksound.com/sounds/mario-wins
+- - Victory
+- - - https://teslalocksound.com/sounds/mario-wins
 - - Defeat
