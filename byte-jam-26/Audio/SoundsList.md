@@ -23,9 +23,10 @@
 
 ## Boss
 - Attack
-- - Slam (Attack form above)
+- - Slam (Attack from above)
 - - - https://pixabay.com/sound-effects/search/thud%20dull/?pagi=4 - Table Smash
 - - Swing (Attack from side)
+- - - https://pixabay.com/sound-effects/search/wind%20woosh%20heavy/?pagi=2 - Woosh long Cartoon
 - Roar
 - - Pained 
 - - - https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=2 - Zombie Scream
