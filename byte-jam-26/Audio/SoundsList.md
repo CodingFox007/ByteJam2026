@@ -1,7 +1,7 @@
 # Sounds
 transfer into .wav files
 
-## Player
+## Player <!-- Done -->
 <details>
 <summary>Damage</summary>
 
@@ -21,9 +21,9 @@ transfer into .wav files
 - https://pixabay.com/sound-effects/search/punch/ - Classic Punch Impact
 </details>
 
-<hr>
+<hr><!-- ------------------------------------ -->
 
-## Zombie/enemy
+## Zombie/enemy <!-- Done -->
 <details>
 <summary>Damage</summary>
 
@@ -48,17 +48,17 @@ transfer into .wav files
 - https://pixabay.com/sound-effects/search/zombie%20bite/ - Zombie Bite
 </details>
 
-<hr>
+<hr><!-- ------------------------------------ -->
 
-## Boss
+## Boss <!-- Done -->
 <details>
 <summary>Attack</summary>
-<details>
+<details open>
 <summary>> Slam (Attack from above)</summary>
 
 - https://pixabay.com/sound-effects/search/thud%20dull/?pagi=4 - Table Smash
 </details>
-<details>
+<details open>
 <summary>> Swing (Attack from side)</summary>
 
 - https://pixabay.com/sound-effects/search/wind%20woosh%20heavy/?pagi=2 - Woosh long Cartoon
@@ -67,13 +67,13 @@ transfer into .wav files
 
 <details>
 <summary>Roar</summary>
-<details>
+<details open>
 <summary>> Pained</summary>
 
 - https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=2 - Zombie Scream
 - https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=6 - Dragon Hurt
 </details>
-<details>
+<details open>
 <summary>> Angry</summary>
 
 - https://pixabay.com/sound-effects/search/zombie%20groan/ - Zombie Groan SFX
@@ -82,63 +82,89 @@ transfer into .wav files
 
 <details>
 <summary>Defeat</summary>
-<details>
+<details open>
 <summary>> Thud</summary>
 
 - https://pixabay.com/sound-effects/search/punch/?pagi=2 - Punch-kick
 </details>
-<details>
+<details open>
 <summary>> Death</summary>
 
 - https://pixabay.com/sound-effects/search/zombie%20groan/ - Zombie Call
 </details>
 </details>
 
-<hr>
+<hr><!-- ------------------------------------ -->
 
 ## Weapons
 <details>
 <summary>Gun</summary>
+<details open>
+<summary>> Firing</summary>
 
-- firing 1-2
-- reload
-- empty click
+- _ _
 </details>
+<details open>
+<summary>> Reload</summary>
+
+- _ _
+</details>
+<details open>
+<summary>> Empty Click</summary>
+
+- _ _
+</details>
+</details>
+
 <details>
 <summary>Blade</summary>
+<details open>
+<summary>> Swing</summary>
 
-- Swing
-- Collide
+- _ _
 </details>
+<details open>
+<summary>> Collide</summary>
+
+- _ _
+</details>
+</details>
+
 <details>
 <summary>Grenade</summary>
+<details open>
+<summary>> Throw</summary>
 
-- Throw
-- Explosion
+- _ _
+</details>
+<details open>
+<summary>> Explosion</summary>
+
+- _ _
 </details>
 </details>
 
-<hr>
+<hr><!-- ------------------------------------ -->
 
-## Environment
+## Environment <!-- Done -->
 <details>
 <summary>Walking and running</summary>
-<details>
+<details open>
 <summary>> Wood</summary>
 
 - https://pixabay.com/sound-effects/search/walk%20on%20conrete/ - Walking on wood
 </details>
-<details>
+<details open>
 <summary>> Dirt</summary>
 
 - https://pixabay.com/sound-effects/search/walk%20on%20conrete/ - Walking on dirt
 </details>
-<details>
+<details open>
 <summary>> Metal</summary>
 
 - https://pixabay.com/sound-effects/search/walk%20on%20metal/?pagi=2 - Metal Footsteps
 </details>
-<details>
+<details open>
 <summary>> Concrete</summary>
 
 - https://pixabay.com/sound-effects/search/walk%20on%20metal/ - footsteps on concrete
@@ -153,20 +179,19 @@ transfer into .wav files
 
 <details>
 <summary>Box</summary>
-<details>
+<details open>
 <summary>> Box Open</summary>
 
 - *forgot to fill*
 </details>
-<details>
+<details open>
 <summary>> Box Break</summary>
 
 - https://pixabay.com/sound-effects/search/cod%20mystery%20box/?duration=0-30 - boc crash
 </details>
 </details>
 
-
-<hr>
+<hr><!-- ------------------------------------ -->
 
 ## Music
 <details>
@@ -183,20 +208,27 @@ transfer into .wav files
 
 <details>
 <summary>Boss Fight</summary>
-<details>
+<details open>
 <summary>> Background</summary>
 
 - _ _
 </details>
-<details>
+<details open>
 <summary>> Victory</summary>
 
 - https://teslalocksound.com/sounds/mario-wins
 </details>
-<details>
+<details open>
 <summary>> Defeat</summary>
 
 - _ _
 </details>
 </details>
 
+<!-- 
+<details>
+<summary></summary>
+
+- _ _
+</details>
+ -->
