@@ -10,6 +10,7 @@
 - damage 1-3
 - death
 - groans
+- - https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=2 - Zombie Voice - Growl
 - bite
 
 ## Boss
