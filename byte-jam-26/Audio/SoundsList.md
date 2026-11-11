@@ -15,6 +15,7 @@
 - - https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=4 - aaaaeuuuuuuuuugh
 - death
 - - https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=7 - Zombie Death 2
+- - https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=9 - monster death grunt
 - groans
 - - https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=2 - Zombie Voice - Growl
 - - https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=3 - Monster Groan
