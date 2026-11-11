@@ -5,3 +5,10 @@ Caleb Seieroe has arrived
 =======
 Chalan participated
 >>>>>>> 90b5398b0fa290bd141fd8575738f68bcf2b5fee
+
+### Game Content:
+Game Name: _ _ _ _ _
+View: 2D, top or side view?
+Controls: WASD
+Game details:
+- 
