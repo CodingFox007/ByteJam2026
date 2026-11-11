@@ -2,16 +2,25 @@
 transfer into .wav files
 <details>
 <summary>Player</summary>
+<details>
+<summary>damage</summary>
 
-- damage 1-3
-- - https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=4 - Grunt 1
-- - https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=4 - grunt.mp3
-- - https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=5 - Male Hurt Sound
-- death
-- - https://pixabay.com/sound-effects/search/death%20groan/ - Dramatic Death Collapse
-- - https://pixabay.com/sound-effects/search/death%20groan/ - Male Death Scream
-- punch 
-- - https://pixabay.com/sound-effects/search/punch/ - Classic Punch Impact
+- https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=4 - Grunt 1
+- https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=4 - grunt.mp3
+- https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=5 - Male Hurt Sound
+</details>
+
+<details>
+<summary>death</summary>
+
+- https://pixabay.com/sound-effects/search/death%20groan/ - Dramatic Death Collapse
+- https://pixabay.com/sound-effects/search/death%20groan/ - Male Death Scream
+</details>
+
+<details>
+<summary>punch</summary>
+- https://pixabay.com/sound-effects/search/punch/ - Classic Punch Impact
+</details>
 </details>
 
 <details>
