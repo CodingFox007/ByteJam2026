@@ -4,7 +4,7 @@
 ## Player
 - damage 1-3
 - death
-- punch
+- punch - https://pixabay.com/sound-effects/search/punch/ - Classic Punch Impact
 
 ## Zombie/enemy
 - damage 1-3
