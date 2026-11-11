@@ -1,5 +1,5 @@
 # Sounds
-.wav files
+transfer into .wav files
 <details>
 <summary>Player</summary>
 
@@ -14,8 +14,9 @@
 - - https://pixabay.com/sound-effects/search/punch/ - Classic Punch Impact
 </details>
 
+<details>
+<summary>Zombie/enemy</summary>
 
-## Zombie/enemy
 - damage 1-3
 - - https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=4 - aaaaeuuuuuuuuugh
 - - https://pixabay.com/sound-effects/search/zombie%20hurt%20groan/?duration=0-30 - Male Hurt Sound
@@ -27,8 +28,11 @@
 - - https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=3 - Monster Groan
 - bite
 - - - https://pixabay.com/sound-effects/search/zombie%20bite/ - Zombie Bite
+</details>
 
-## Boss
+<details>
+<summary>Boss</summary>
+
 - Attack
 - - Slam (Attack from above)
 - - - https://pixabay.com/sound-effects/search/thud%20dull/?pagi=4 - Table Smash
@@ -45,8 +49,11 @@
 - - - https://pixabay.com/sound-effects/search/punch/?pagi=2 - Punch-kick
 - - Death
 - - - https://pixabay.com/sound-effects/search/zombie%20groan/ - Zombie Call
+</details>
 
-## Weapons
+<details>
+<summary>Weapons</summary>
+
 - Gun
 - - firing 1-2
 - - reload
@@ -57,8 +64,11 @@
 - Grenade
 - - Throw
 - - Explosion
+</details>
 
-## Environment
+<details>
+<summary>Environment</summary>
+
 - Walking and running
 - - Materials
 - - - Wood
@@ -76,8 +86,12 @@
 - - - *forgot to fill*
 - - Box Break
 - - - https://pixabay.com/sound-effects/search/cod%20mystery%20box/?duration=0-30 - boc crash
+</details>
 
-## Music
+
+<details>
+<summary>Music</summary>
+
 - Background
 - Box
 - boss fight
@@ -85,3 +99,4 @@
 - - Victory
 - - - https://teslalocksound.com/sounds/mario-wins
 - - Defeat
+</details>
