@@ -18,8 +18,10 @@
 - - Swing (Attack from side)
 - Roar
 - - Pained
-- - Angry
-- Defeat thud (Boss falls onto back)
+- - Angry - https://pixabay.com/sound-effects/search/zombie%20groan/ - Zombie Groan SFX
+- Defeat 
+- - Thud (Boss falls onto back)
+- - Death - https://pixabay.com/sound-effects/search/zombie%20groan/ - Zombie Call
 
 ## Weapons
 - Gun
@@ -34,8 +36,12 @@
 - - Explosion
 
 ## Environment
-- Walking
-- Running
+- Walking and running
+- - Materials
+- - - Wood
+- - - Dirt
+- - - Metal
+- - - Concrete
 - Brushes
 - Box
 - - Box Open
