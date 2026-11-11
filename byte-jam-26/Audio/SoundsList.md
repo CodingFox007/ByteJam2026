@@ -7,12 +7,15 @@
 - - https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=4 - grunt.mp3
 - - https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=5 - Male Hurt Sound
 - death
+- - https://pixabay.com/sound-effects/search/death%20groan/ - Dramatic Death Collapse
+- - https://pixabay.com/sound-effects/search/death%20groan/ - Male Death Scream
 - punch 
 - - https://pixabay.com/sound-effects/search/punch/ - Classic Punch Impact
 
 ## Zombie/enemy
 - damage 1-3
 - - https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=4 - aaaaeuuuuuuuuugh
+- - https://pixabay.com/sound-effects/search/zombie%20hurt%20groan/?duration=0-30 - Male Hurt Sound
 - death
 - - https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=7 - Zombie Death 2
 - - https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=9 - monster death grunt
