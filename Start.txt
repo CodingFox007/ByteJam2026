@@ -8,7 +8,6 @@ Chalan participated
 
 ### Game Content:
 Game Name: _ _ _ _ _
-View: 2D, top or side view?
-Controls: WASD
-Game details:
-- 
+Game View: 2D, top or side view?
+Game Details:
+-
