@@ -20,6 +20,7 @@
 - - https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=2 - Zombie Voice - Growl
 - - https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=3 - Monster Groan
 - bite
+- - - https://pixabay.com/sound-effects/search/zombie%20bite/ - Zombie Bite
 
 ## Boss
 - Attack
