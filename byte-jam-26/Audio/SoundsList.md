@@ -96,55 +96,107 @@ transfer into .wav files
 
 <hr>
 
+## Weapons
 <details>
-<summary>Weapons</summary>
+<summary>Gun</summary>
 
-- Gun
-- - firing 1-2
-- - reload
-- - empty click
-- Blade
-- - Swing
-- - Collide
-- Grenade
-- - Throw
-- - Explosion
+- firing 1-2
+- reload
+- empty click
+</details>
+<details>
+<summary>Blade</summary>
+
+- Swing
+- Collide
+</details>
+<details>
+<summary>Grenade</summary>
+
+- Throw
+- Explosion
+</details>
 </details>
 
 <hr>
 
+## Environment
 <details>
-<summary>Environment</summary>
+<summary>Walking and running</summary>
+<details>
+<summary>- Wood</summary>
 
-- Walking and running
-- - Materials
-- - - Wood
-- - - - https://pixabay.com/sound-effects/search/walk%20on%20conrete/ - Walking on wood
-- - - Dirt
-- - - - https://pixabay.com/sound-effects/search/walk%20on%20conrete/ - Walking on dirt
-- - - Metal
-- - - - https://pixabay.com/sound-effects/search/walk%20on%20metal/?pagi=2 - Metal Footsteps
-- - - Concrete
-- - - - https://pixabay.com/sound-effects/search/walk%20on%20metal/ - footsteps on concrete
-- Brushes
-- - https://pixabay.com/sound-effects/search/walk%20through%20bush/ - Leaves Rustle 03
-- Box
-- - Box Open
-- - - *forgot to fill*
-- - Box Break
-- - - https://pixabay.com/sound-effects/search/cod%20mystery%20box/?duration=0-30 - boc crash
+- https://pixabay.com/sound-effects/search/walk%20on%20conrete/ - Walking on wood
 </details>
+<details>
+<summary>- Dirt</summary>
+
+- https://pixabay.com/sound-effects/search/walk%20on%20conrete/ - Walking on dirt
+</details>
+<details>
+<summary>- Metal</summary>
+
+- https://pixabay.com/sound-effects/search/walk%20on%20metal/?pagi=2 - Metal Footsteps
+</details>
+<details>
+<summary>- Concrete</summary>
+
+- https://pixabay.com/sound-effects/search/walk%20on%20metal/ - footsteps on concrete
+</details>
+</details>
+
+<details>
+<summary>Brush</summary>
+
+- https://pixabay.com/sound-effects/search/walk%20through%20bush/ - Leaves Rustle 03
+</details>
+
+<details>
+<summary>Box</summary>
+<details>
+<summary>- Box Open</summary>
+
+- *forgot to fill*
+</details>
+<details>
+<summary>- Box Break</summary>
+
+- https://pixabay.com/sound-effects/search/cod%20mystery%20box/?duration=0-30 - boc crash
+</details>
+</details>
+
 
 <hr>
 
+## Music
 <details>
-<summary>Music</summary>
+<summary>Background</summary>
 
-- Background
-- Box
-- boss fight
-- - Background
-- - Victory
-- - - https://teslalocksound.com/sounds/mario-wins
-- - Defeat
+- _ _
 </details>
+
+<details>
+<summary>Box</summary>
+
+- _ _
+</details>
+
+<details>
+<summary>Boss Fight</summary>
+<details>
+<summary>- Background</summary>
+
+- _ _
+</details>
+<details>
+<summary>- Victory</summary>
+
+- https://teslalocksound.com/sounds/mario-wins
+</details>
+<details>
+<summary>- Defeat</summary>
+
+- _ _
+</details>
+</details>
+
