@@ -1,13 +1,24 @@
 # Sounds
+.wav files
 
 ## Player
 - damage 1-3
 - death
+- punch
 
 ## Zombie/enemy
 - damage 1-3
 - death
 - groans
+
+## Boss
+- Attack
+- - Slam (Attack form above)
+- - Swing (Attack from side)
+- Roar
+- - Pained
+- - Angry
+- Defeat thud (Boss falls onto back)
 
 ## Weapons
 - Gun
@@ -32,4 +43,7 @@
 ## Music
 - Background
 - Box
-- boss fight?
+- boss fight
+- - Background
+- - Victory
+- - Defeat
