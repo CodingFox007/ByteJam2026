@@ -10,6 +10,7 @@
 - damage 1-3
 - death
 - groans
+- bite
 
 ## Boss
 - Attack
@@ -45,5 +46,5 @@
 - Box
 - boss fight
 - - Background
-- - Victory
+- - Victory - https://teslalocksound.com/sounds/mario-wins
 - - Defeat
