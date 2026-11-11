@@ -54,12 +54,12 @@ transfer into .wav files
 <details>
 <summary>Attack</summary>
 <details>
-<summary>- Slam (Attack from above)</summary>
+<summary>> Slam (Attack from above)</summary>
 
 - https://pixabay.com/sound-effects/search/thud%20dull/?pagi=4 - Table Smash
 </details>
 <details>
-<summary>- Swing (Attack from side)</summary>
+<summary>> Swing (Attack from side)</summary>
 
 - https://pixabay.com/sound-effects/search/wind%20woosh%20heavy/?pagi=2 - Woosh long Cartoon
 </details> 
@@ -68,13 +68,13 @@ transfer into .wav files
 <details>
 <summary>Roar</summary>
 <details>
-<summary>- Pained</summary>
+<summary>> Pained</summary>
 
 - https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=2 - Zombie Scream
 - https://pixabay.com/sound-effects/search/zombie%20groan/?pagi=6 - Dragon Hurt
 </details>
 <details>
-<summary>- Angry</summary>
+<summary>> Angry</summary>
 
 - https://pixabay.com/sound-effects/search/zombie%20groan/ - Zombie Groan SFX
 </details>
@@ -83,12 +83,12 @@ transfer into .wav files
 <details>
 <summary>Defeat</summary>
 <details>
-<summary>- Thud</summary>
+<summary>> Thud</summary>
 
 - https://pixabay.com/sound-effects/search/punch/?pagi=2 - Punch-kick
 </details>
 <details>
-<summary>- Death</summary>
+<summary>> Death</summary>
 
 - https://pixabay.com/sound-effects/search/zombie%20groan/ - Zombie Call
 </details>
@@ -124,22 +124,22 @@ transfer into .wav files
 <details>
 <summary>Walking and running</summary>
 <details>
-<summary>- Wood</summary>
+<summary>> Wood</summary>
 
 - https://pixabay.com/sound-effects/search/walk%20on%20conrete/ - Walking on wood
 </details>
 <details>
-<summary>- Dirt</summary>
+<summary>> Dirt</summary>
 
 - https://pixabay.com/sound-effects/search/walk%20on%20conrete/ - Walking on dirt
 </details>
 <details>
-<summary>- Metal</summary>
+<summary>> Metal</summary>
 
 - https://pixabay.com/sound-effects/search/walk%20on%20metal/?pagi=2 - Metal Footsteps
 </details>
 <details>
-<summary>- Concrete</summary>
+<summary>> Concrete</summary>
 
 - https://pixabay.com/sound-effects/search/walk%20on%20metal/ - footsteps on concrete
 </details>
@@ -154,12 +154,12 @@ transfer into .wav files
 <details>
 <summary>Box</summary>
 <details>
-<summary>- Box Open</summary>
+<summary>> Box Open</summary>
 
 - *forgot to fill*
 </details>
 <details>
-<summary>- Box Break</summary>
+<summary>> Box Break</summary>
 
 - https://pixabay.com/sound-effects/search/cod%20mystery%20box/?duration=0-30 - boc crash
 </details>
@@ -184,17 +184,17 @@ transfer into .wav files
 <details>
 <summary>Boss Fight</summary>
 <details>
-<summary>- Background</summary>
+<summary>> Background</summary>
 
 - _ _
 </details>
 <details>
-<summary>- Victory</summary>
+<summary>> Victory</summary>
 
 - https://teslalocksound.com/sounds/mario-wins
 </details>
 <details>
-<summary>- Defeat</summary>
+<summary>> Defeat</summary>
 
 - _ _
 </details>
