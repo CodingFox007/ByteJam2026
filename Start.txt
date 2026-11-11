@@ -9,5 +9,9 @@ Chalan participated
 ### Game Content:
 Game Name: _ _ _ _ _
 Game View: 2D, top or side view?
+Gameplay:
+- Apocalypse survival
+- WASD movement
+- left click & right click interaction/action
 Game Details:
 -
