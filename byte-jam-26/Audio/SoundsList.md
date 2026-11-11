@@ -66,6 +66,7 @@
 - Box
 - - Box Open
 - - Box Break
+- - - https://pixabay.com/sound-effects/search/cod%20mystery%20box/?duration=0-30 - boc crash
 
 ## Music
 - Background
