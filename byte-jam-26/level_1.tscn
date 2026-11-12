@@ -1,10 +1,10 @@
-[gd_scene format=3 uid="uid://b4si5l4nyy282"]
+[gd_scene format=3 uid="uid://dm2ymj6viwhnj"]
 
 [ext_resource type="Texture2D" uid="uid://dn2vb32l7iavn" path="res://LevelOneBackground/01_sky.png" id="1_ihfcg"]
 [ext_resource type="Texture2D" uid="uid://cwd0j2h7qncpf" path="res://LevelOneBackground/00_sun.png" id="2_rka8t"]
 [ext_resource type="Texture2D" uid="uid://d3p2ucmxheob2" path="res://LevelOneBackground/03_far.png" id="3_5hph3"]
 [ext_resource type="Texture2D" uid="uid://8yeev0vf1jfo" path="res://LevelOneBackground/04_mid.png" id="4_j7kpp"]
-[ext_resource type="SpriteFrames" uid="uid://fh8du5qamjxt" path="res://Assets/AssetsSpritesheetV3.tres" id="5_5hph3"]
+[ext_resource type="SpriteFrames" uid="uid://cx25rl4eatl48" path="res://Assets/AssetsSpritesheetV3.tres" id="5_5hph3"]
 [ext_resource type="Script" uid="uid://cdcqlo355sbhs" path="res://Scripts/playerScript.gd" id="5_j7kpp"]
 [ext_resource type="Texture2D" uid="uid://22xrgrtmqpi8" path="res://Tiles/ground_tiles_128x64.png" id="6_j7kpp"]
 [ext_resource type="Texture2D" uid="uid://b6srrtyjgbl5f" path="res://Tiles/city_tileset_64.png" id="8_bjebc"]
@@ -3471,9 +3471,6 @@ sources/0 = SubResource("TileSetAtlasSource_bjebc")
 sources/1 = SubResource("TileSetAtlasSource_5rr72")
 
 [node name="Level1" type="Node2D" unique_id=926407240]
-position = Vector2(-5, 31)
-metadata/_edit_vertical_guides_ = [-3073.0]
-metadata/_edit_horizontal_guides_ = [4606.0]
 
 [node name="Parallax2D" type="Parallax2D" parent="." unique_id=1879566310]
 scroll_offset = Vector2(177, -115)
@@ -3484,7 +3481,7 @@ scale = Vector2(1, 1.6462963)
 texture = ExtResource("1_ihfcg")
 
 [node name="00Sun" type="Sprite2D" parent="Parallax2D" unique_id=1349859013]
-position = Vector2(-52, 341)
+position = Vector2(189, 181)
 texture = ExtResource("2_rka8t")
 
 [node name="03Far" type="Sprite2D" parent="Parallax2D" unique_id=1126672782]
@@ -3492,7 +3489,7 @@ position = Vector2(783, 496)
 texture = ExtResource("3_5hph3")
 
 [node name="04Mid" type="Sprite2D" parent="Parallax2D" unique_id=1747949815]
-position = Vector2(784, 490)
+position = Vector2(783, 486)
 texture = ExtResource("4_j7kpp")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1994248561]
@@ -3500,12 +3497,13 @@ position = Vector2(-1, 20)
 script = ExtResource("5_j7kpp")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=1896975739]
-position = Vector2(324.00003, 515)
+position = Vector2(310, 519)
 scale = Vector2(0.5636493, 0.57095575)
 sprite_frames = ExtResource("5_5hph3")
-animation = &"walkAnimation"
+animation = &"idleAnimation"
 autoplay = "idleAnimation"
-frame_progress = 0.67888683
+frame = 1
+frame_progress = 0.1394163
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=124632998]
 position = Vector2(39, 419)
