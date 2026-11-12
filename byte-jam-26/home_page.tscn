@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://bjf5llnjy1d6n"]
+
+[ext_resource type="Texture2D" uid="uid://dn2vb32l7iavn" path="res://LevelOneBackground/01_sky.png" id="1_ou0my"]
+[ext_resource type="Texture2D" uid="uid://cwd0j2h7qncpf" path="res://LevelOneBackground/00_sun.png" id="2_k3ry7"]
+[ext_resource type="Texture2D" uid="uid://b51x8y3rtd5w6" path="res://LevelOneBackground/02_clouds.png" id="3_h8f0u"]
+[ext_resource type="Texture2D" uid="uid://d3p2ucmxheob2" path="res://LevelOneBackground/03_far.png" id="4_tjbaj"]
+[ext_resource type="Texture2D" uid="uid://dn4ha4dgcauah" path="res://Assets/HomePage.png" id="5_xut5l"]
+
+[node name="Home Page" type="Node2D" unique_id=253090080]
+
+[node name="01Sky" type="Sprite2D" parent="." unique_id=1065988952]
+position = Vector2(581, 266)
+scale = Vector2(0.6010417, 1)
+texture = ExtResource("1_ou0my")
+
+[node name="00Sun" type="Sprite2D" parent="." unique_id=1585271640]
+position = Vector2(148, 103)
+texture = ExtResource("2_k3ry7")
+
+[node name="02Clouds" type="Sprite2D" parent="." unique_id=1998946862]
+position = Vector2(602, 312)
+texture = ExtResource("3_h8f0u")
+
+[node name="03Far" type="Sprite2D" parent="." unique_id=1652197161]
+position = Vector2(583, 517)
+texture = ExtResource("4_tjbaj")
+
+[node name="HomePage" type="Sprite2D" parent="." unique_id=1950639517]
+position = Vector2(563, 395)
+texture = ExtResource("5_xut5l")
+
+[node name="Button" type="Button" parent="HomePage" unique_id=536787733]
+anchors_preset = -1
+anchor_left = 0.202
+anchor_top = 0.5
+anchor_right = 0.36
+anchor_bottom = 0.781
+offset_left = -483.536
+offset_top = -275.0
+offset_right = -484.48
+offset_bottom = -269.74002
+rotation = -0.003623901
+action_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Button2" type="Button" parent="HomePage" unique_id=1353219989]
+anchors_preset = -1
+anchor_left = 0.231
+anchor_top = 0.231
+anchor_right = 0.82800007
+anchor_bottom = 0.569
+offset_left = -483.608
+offset_top = -269.74
+offset_right = -466.5041
+offset_bottom = -345.26
+rotation = 0.11690962
