@@ -1,17 +1,18 @@
 [gd_scene format=3 uid="uid://c631ytftbd2x4"]
 
-[ext_resource type="Texture2D" uid="uid://b1gwr5h2erv8j" path="res://Assets/AssetsSpritesheetV3.png" id="1_7k104"]
+[ext_resource type="Texture2D" uid="uid://b1gwr5h2erv8j" path="res://Assets/AssetsSpritesheetV3.png" id="1_hghv2"]
+[ext_resource type="Script" uid="uid://jjfil1a0hatt" path="res://Scripts/zombie_hitbox.gd" id="2_1f0kj"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4gyqm"]
-atlas = ExtResource("1_7k104")
+atlas = ExtResource("1_hghv2")
 region = Rect2(3390, 0, 113, 167)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qi2p4"]
-atlas = ExtResource("1_7k104")
+atlas = ExtResource("1_hghv2")
 region = Rect2(0, 501, 81, 167)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_iifgy"]
-atlas = ExtResource("1_7k104")
+atlas = ExtResource("1_hghv2")
 region = Rect2(3390, 501, 113, 167)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8wb0i"]
@@ -31,10 +32,33 @@ animations = [{
 "speed": 3.0
 }]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_boc63"]
+radius = 33.0
+height = 154.99785
+
 [node name="Node2D" type="Node2D" unique_id=1441788404]
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=305911923]
-position = Vector2(5, -4)
-scale = Vector2(1, 0.9935622)
+[node name="zombie" type="AnimatedSprite2D" parent="." unique_id=305911923]
+texture_filter = 1
+position = Vector2(-2.4070787, 13.499996)
+scale = Vector2(0.705998, 0.72455084)
 sprite_frames = SubResource("SpriteFrames_8wb0i")
-frame_progress = 0.013129151
+frame_progress = 0.24947973
+
+[node name="zombieHitbox" type="Area2D" parent="." unique_id=2132095386]
+position = Vector2(-8.761061, 12.041508)
+scale = Vector2(0.70599794, 0.7245508)
+collision_mask = 2
+script = ExtResource("2_1f0kj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="zombieHitbox" unique_id=1382609662]
+position = Vector2(10, -10.064797)
+scale = Vector2(1, 0.99999994)
+shape = SubResource("CapsuleShape2D_boc63")
+
+[node name="Timer" type="Timer" parent="zombieHitbox" unique_id=327397009]
+wait_time = 0.473
+one_shot = true
+
+[connection signal="body_entered" from="zombieHitbox" to="zombieHitbox" method="_on_body_entered"]
+[connection signal="timeout" from="zombieHitbox/Timer" to="zombieHitbox" method="_on_timer_timeout"]
