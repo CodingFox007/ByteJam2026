@@ -102,7 +102,7 @@ transfer into .wav files
 <details open>
 <summary>> Firing</summary>
 
-- shotgun
+- Fortnite shotgun
 - https://pixabay.com/sound-effects/search/rifle/ - Battle Rifle
 - https://pixabay.com/sound-effects/search/lazer%20beam/ - Laser6Quick
 - https://pixabay.com/sound-effects/search/lazer%20beam/?pagi=3 - Big Laser Beam
