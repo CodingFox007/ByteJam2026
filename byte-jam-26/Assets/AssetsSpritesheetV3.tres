@@ -194,6 +194,35 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("atlas_26")
 }],
+"loop": 1,
+"name": &"default",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("atlas_16")
+}, {
+"duration": 1.0,
+"texture": SubResource("atlas_17")
+}],
+"loop": 1,
+"name": &"idleAnimation",
+"speed": 1.1
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("atlas_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("atlas_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("atlas_0")
+}],
+"loop": 1,
+"name": &"walkAnimation",
+"speed": 6.0
+}]
 "loop": true,
 "name": &"default",
 "speed": 12.0
