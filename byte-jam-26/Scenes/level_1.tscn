@@ -1649,3 +1649,15 @@ shape = SubResource("WorldBoundaryShape2D_wrinw")
 
 [node name="Node2D" parent="BottomOfMap" unique_id=1441788404 instance=ExtResource("9_wrinw")]
 position = Vector2(1037, 494)
+
+[node name="Node2D" parent="." unique_id=714060778 instance=ExtResource("9_wrinw")]
+position = Vector2(1215, 490)
+
+[node name="Node2D2" parent="." unique_id=825344329 instance=ExtResource("9_wrinw")]
+position = Vector2(1376, 464)
+
+[node name="Node2D3" parent="." unique_id=396150059 instance=ExtResource("9_wrinw")]
+position = Vector2(1093, 301)
+
+[node name="Node2D4" parent="." unique_id=1107851853 instance=ExtResource("9_wrinw")]
+position = Vector2(1277, 304)

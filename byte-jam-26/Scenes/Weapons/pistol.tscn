@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://cgq2r8o3xuf4j"]
+
+[ext_resource type="Script" uid="uid://c4rpl5u72hnoe" path="res://Scripts/pistol.gd" id="1_aq3ds"]
+[ext_resource type="Texture2D" uid="uid://b1gwr5h2erv8j" path="res://Assets/AssetsSpritesheetV3.png" id="2_0qusy"]
+[ext_resource type="PackedScene" uid="uid://ck01lwiactm27" path="res://Scenes/Weapons/bullet.tscn" id="2_olife"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_olife"]
+atlas = ExtResource("2_0qusy")
+region = Rect2(222, 1033, 188, 112)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_boc63"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_olife")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Pistol" type="Node2D" unique_id=2135593658]
+script = ExtResource("1_aq3ds")
+bullet_scene = ExtResource("2_olife")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=880816911]
+texture_filter = 1
+position = Vector2(13.5, -0.25)
+scale = Vector2(0.20744683, 0.13839287)
+sprite_frames = SubResource("SpriteFrames_boc63")
+
+[node name="BulletSpawn" type="Marker2D" parent="." unique_id=1412053204]
