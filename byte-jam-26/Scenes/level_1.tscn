@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://22xrgrtmqpi8" path="res://Tiles/ground_tiles_128x64.png" id="5_af3po"]
 [ext_resource type="Texture2D" uid="uid://b6srrtyjgbl5f" path="res://Tiles/city_tileset_64.png" id="6_uy8f0"]
 [ext_resource type="PackedScene" uid="uid://bnf6pks4mum13" path="res://Scenes/player.tscn" id="7_6r07y"]
-[ext_resource type="PackedScene" uid="uid://cfxrvu7mhfkkm" path="res://killZone.tscn" id="8_xrdnt"]
+[ext_resource type="PackedScene" uid="uid://cfxrvu7mhfkkm" path="res://Scenes/killZone.tscn" id="8_xrdnt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bjebc"]
 texture = ExtResource("5_af3po")
