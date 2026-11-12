@@ -104,6 +104,8 @@ transfer into .wav files
 
 - shotgun
 - https://pixabay.com/sound-effects/search/rifle/ - Battle Rifle
+- https://pixabay.com/sound-effects/search/lazer%20beam/ - Laser6Quick
+- https://pixabay.com/sound-effects/search/lazer%20beam/?pagi=3 - Big Laser Beam
 </details>
 <details open>
 <summary>> Reload</summary>
@@ -142,7 +144,7 @@ transfer into .wav files
 <details open>
 <summary>> Explosion</summary>
 
-- _ _
+- https://pixabay.com/sound-effects/search/explosion/ - Loud Explosion
 </details>
 </details>
 
