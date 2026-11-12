@@ -30,6 +30,7 @@ position = Vector2(563, 395)
 texture = ExtResource("5_xut5l")
 
 [node name="Button" type="Button" parent="HomePage" unique_id=536787733]
+visible = false
 anchors_preset = -1
 anchor_left = 0.202
 anchor_top = 0.5
@@ -44,6 +45,7 @@ action_mode = 0
 metadata/_edit_use_anchors_ = true
 
 [node name="Button2" type="Button" parent="HomePage" unique_id=1353219989]
+visible = false
 anchors_preset = -1
 anchor_left = 0.231
 anchor_top = 0.231
