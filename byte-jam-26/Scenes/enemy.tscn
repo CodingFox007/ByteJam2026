@@ -2,48 +2,60 @@
 
 [ext_resource type="Texture2D" uid="uid://b1gwr5h2erv8j" path="res://Assets/AssetsSpritesheetV3.png" id="1_hghv2"]
 [ext_resource type="Script" uid="uid://jjfil1a0hatt" path="res://Scripts/zombie_hitbox.gd" id="2_1f0kj"]
+[ext_resource type="Script" uid="uid://7j0ipkli6c8g" path="res://Scripts/zombie.gd" id="2_afpow"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_4gyqm"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_afpow"]
 atlas = ExtResource("1_hghv2")
-region = Rect2(3390, 0, 113, 167)
+region = Rect2(3402, 0, 81, 167)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_qi2p4"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_287tu"]
 atlas = ExtResource("1_hghv2")
 region = Rect2(0, 501, 81, 167)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_iifgy"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_0830c"]
 atlas = ExtResource("1_hghv2")
-region = Rect2(3390, 501, 113, 167)
+region = Rect2(3402, 501, 81, 167)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_8wb0i"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_wwb70"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_4gyqm")
+"texture": SubResource("AtlasTexture_afpow")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_qi2p4")
+"texture": SubResource("AtlasTexture_287tu")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_iifgy")
+"texture": SubResource("AtlasTexture_0830c")
 }],
 "loop": 1,
 "name": &"default",
-"speed": 3.0
+"speed": 5.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_boc63"]
-radius = 33.0
-height = 154.99785
+radius = 36.82731
+height = 146.99028
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_boc63"]
+size = Vector2(133.14487, 43.820263)
 
 [node name="Node2D" type="Node2D" unique_id=1441788404]
 
-[node name="zombie" type="AnimatedSprite2D" parent="." unique_id=305911923]
+[node name="zombie" type="CharacterBody2D" parent="." unique_id=2007749563]
 texture_filter = 1
 position = Vector2(-2.4070787, 13.499996)
 scale = Vector2(0.705998, 0.72455084)
-sprite_frames = SubResource("SpriteFrames_8wb0i")
-frame_progress = 0.24947973
+script = ExtResource("2_afpow")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="zombie" unique_id=848464868]
+sprite_frames = SubResource("SpriteFrames_wwb70")
+frame_progress = 0.32456604
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="zombie" unique_id=1382609662]
+position = Vector2(6.242339, -10.351235)
+scale = Vector2(0.9999999, 0.9999998)
+shape = SubResource("CapsuleShape2D_boc63")
 
 [node name="zombieHitbox" type="Area2D" parent="." unique_id=2132095386]
 position = Vector2(-8.761061, 12.041508)
@@ -51,14 +63,15 @@ scale = Vector2(0.70599794, 0.7245508)
 collision_mask = 2
 script = ExtResource("2_1f0kj")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="zombieHitbox" unique_id=1382609662]
-position = Vector2(10, -10.064797)
-scale = Vector2(1, 0.99999994)
-shape = SubResource("CapsuleShape2D_boc63")
-
 [node name="Timer" type="Timer" parent="zombieHitbox" unique_id=327397009]
 wait_time = 0.473
 one_shot = true
+
+[node name="ZombieAttackBox" type="CollisionShape2D" parent="zombieHitbox" unique_id=1318404829]
+position = Vector2(15.24234, 38.414825)
+scale = Vector2(1, 0.9999999)
+shape = SubResource("RectangleShape2D_boc63")
+debug_color = Color(0.99827844, 0.03304277, 9.62615e-07, 0.42)
 
 [connection signal="body_entered" from="zombieHitbox" to="zombieHitbox" method="_on_body_entered"]
 [connection signal="timeout" from="zombieHitbox/Timer" to="zombieHitbox" method="_on_timer_timeout"]

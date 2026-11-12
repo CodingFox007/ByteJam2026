@@ -1648,4 +1648,4 @@ position = Vector2(42, 1227)
 shape = SubResource("WorldBoundaryShape2D_wrinw")
 
 [node name="Node2D" parent="BottomOfMap" unique_id=1441788404 instance=ExtResource("9_wrinw")]
-position = Vector2(913, 503)
+position = Vector2(784, 488)
