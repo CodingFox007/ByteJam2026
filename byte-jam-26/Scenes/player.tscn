@@ -9,16 +9,17 @@ height = 94.0
 
 [node name="Player" type="CharacterBody2D" unique_id=1882964120]
 position = Vector2(-18, -431)
+collision_layer = 2
+collision_mask = 3
 script = ExtResource("1_onrkg")
+metadata/_edit_vertical_guides_ = [-239.0]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1510667014]
 position = Vector2(310, 519)
 scale = Vector2(0.5636493, 0.57095575)
 sprite_frames = ExtResource("2_i3pqv")
-animation = &"idleAnimation"
+animation = &"walkAnimation"
 autoplay = "idleAnimation"
-frame = 1
-frame_progress = 0.1394163
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1817958479]
 position = Vector2(23, 433)
@@ -26,4 +27,4 @@ shape = SubResource("CapsuleShape2D_bjebc")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1645304818]
 position = Vector2(375, 263)
-limit_bottom = 1500
+limit_bottom = 800

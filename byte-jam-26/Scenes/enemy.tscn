@@ -28,7 +28,7 @@ animations = [{
 }],
 "loop": 1,
 "name": &"default",
-"speed": 2.0
+"speed": 3.0
 }]
 
 [node name="Node2D" type="Node2D" unique_id=1441788404]
@@ -37,4 +37,4 @@ animations = [{
 position = Vector2(5, -4)
 scale = Vector2(1, 0.9935622)
 sprite_frames = SubResource("SpriteFrames_8wb0i")
-frame_progress = 0.054493982
+frame_progress = 0.013129151

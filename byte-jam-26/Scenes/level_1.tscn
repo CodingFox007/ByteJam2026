@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://22xrgrtmqpi8" path="res://Tiles/ground_tiles_128x64.png" id="5_af3po"]
 [ext_resource type="Texture2D" uid="uid://b6srrtyjgbl5f" path="res://Tiles/city_tileset_64.png" id="6_uy8f0"]
 [ext_resource type="PackedScene" uid="uid://bnf6pks4mum13" path="res://Scenes/player.tscn" id="7_6r07y"]
+[ext_resource type="PackedScene" uid="uid://cfxrvu7mhfkkm" path="res://Scenes/killZone.tscn" id="8_xrdnt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bjebc"]
 texture = ExtResource("5_af3po")
@@ -1604,6 +1605,9 @@ sources/1 = SubResource("TileSetAtlasSource_5rr72")
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_5rr72"]
 
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_wrinw"]
+distance = 48.0
+
 [node name="Level1" type="Node2D" unique_id=926407240]
 
 [node name="Parallax2D" type="Parallax2D" parent="." unique_id=1879566310]
@@ -1635,3 +1639,9 @@ libraries/ = SubResource("AnimationLibrary_5rr72")
 
 [node name="Player" parent="." unique_id=1882964120 instance=ExtResource("7_6r07y")]
 position = Vector2(41, 65)
+
+[node name="killZone" parent="." unique_id=612461458 instance=ExtResource("8_xrdnt")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="killZone" unique_id=1248001097]
+position = Vector2(42, 1227)
+shape = SubResource("WorldBoundaryShape2D_wrinw")
