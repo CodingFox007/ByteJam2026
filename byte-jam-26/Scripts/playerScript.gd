@@ -24,8 +24,9 @@ func _physics_process(delta: float) -> void:
 
 	move_and_slide()
 	
-	# Animation logic
-	if direction == null:
-		animation.play("idleAnimation")
-	else:
+	
+	## Animation logic
+	if velocity.normalized():
 		animation.play("walkAnimation")
+	else:
+		animation.play("idleAnimation")

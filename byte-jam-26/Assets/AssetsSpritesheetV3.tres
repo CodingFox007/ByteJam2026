@@ -1,6 +1,6 @@
-[gd_resource type="SpriteFrames" load_steps=29 format=3]
+[gd_resource type="SpriteFrames" format=3 uid="uid://cx25rl4eatl48"]
 
-[ext_resource type="Texture2D" path="res://spritesheet.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://b1gwr5h2erv8j" path="res://Assets/AssetsSpritesheetV3.png" id="1"]
 
 [sub_resource type="AtlasTexture" id="atlas_0"]
 atlas = ExtResource("1")
@@ -222,8 +222,4 @@ animations = [{
 "loop": 1,
 "name": &"walkAnimation",
 "speed": 6.0
-}]
-"loop": true,
-"name": &"default",
-"speed": 12.0
 }]
