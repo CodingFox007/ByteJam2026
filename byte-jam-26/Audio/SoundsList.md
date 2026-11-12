@@ -110,12 +110,14 @@ transfer into .wav files
 <details open>
 <summary>> Reload</summary>
 
-- _ _
+- https://pixabay.com/sound-effects/search/reload%20rifle/ - Gun Reload 2 - standard
+- https://pixabay.com/sound-effects/search/reload%20shotgun/ - Gun Reload - for shotgun
 </details>
 <details open>
 <summary>> Empty Click</summary>
 
-- _ _
+- https://pixabay.com/sound-effects/search/gun%20empty/ - Empty Gun Shot - Standard
+- https://pixabay.com/sound-effects/search/gun%20empty/ - Rifle clip empty - Shotgun
 </details>
 </details>
 
