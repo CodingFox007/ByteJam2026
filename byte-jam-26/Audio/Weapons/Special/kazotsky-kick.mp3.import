@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://cb8mjo1aco8lj"
-path="res://.godot/imported/kazotsky-kick.mp3-1c84b5be6e8d8258b5590dc992de1878.mp3str"
+path="res://.godot/imported/kazotsky-kick.mp3-d6d3dca74951657b98433f4463a17e96.mp3str"
 
 [deps]
 
-source_file="res://Audio/Music/kazotsky-kick.mp3"
-dest_files=["res://.godot/imported/kazotsky-kick.mp3-1c84b5be6e8d8258b5590dc992de1878.mp3str"]
+source_file="res://Audio/Weapons/Special/kazotsky-kick.mp3"
+dest_files=["res://.godot/imported/kazotsky-kick.mp3-d6d3dca74951657b98433f4463a17e96.mp3str"]
 
 [params]
 
