@@ -102,7 +102,8 @@ transfer into .wav files
 <details open>
 <summary>> Firing</summary>
 
-- _ _
+- shotgun
+- https://pixabay.com/sound-effects/search/rifle/ - Battle Rifle
 </details>
 <details open>
 <summary>> Reload</summary>
@@ -121,12 +122,13 @@ transfer into .wav files
 <details open>
 <summary>> Swing</summary>
 
-- _ _
+- https://pixabay.com/sound-effects/search/blade/ - Knife Blade In
+- https://pixabay.com/sound-effects/search/blade/ - Knife Blade Out
 </details>
 <details open>
 <summary>> Collide</summary>
 
-- _ _
+- https://pixabay.com/sound-effects/search/blade/ - Sword Blade Slicing Flesh
 </details>
 </details>
 
@@ -205,12 +207,13 @@ transfer into .wav files
 
 - https://pixabay.com/sound-effects/search/background%20music/ - Corporate Background Music
 - https://pixabay.com/sound-effects/search/elevator%20music/ - EndingElevator
+- Darude - Sandstorm (For Endless and/or regular modes)
 </details>
 
 <details>
 <summary>Box</summary>
 
-- _ _
+- https://pixabay.com/sound-effects/search/music%20box/ - Scary Music Box (Untuned)
 </details>
 
 <details>
