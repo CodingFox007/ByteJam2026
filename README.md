@@ -11,7 +11,7 @@ Members<!-- : Caleb Seieroe, Cash Cooper, Chalan Zugg, Draven Livingston, and Et
 </ul>
 
 ## Reason for this project
-Byte Jam for IHCC
+Byte Jam for IHCC Programming Club Fall 2026
 
 ## Process of making the game
 3 days, 8am to 3pm, 21 total hours.
@@ -32,7 +32,7 @@ The engine is Godot, using c# and/or GDScript
 You are Bandana Billy, your job is to survive the apocalypse by any means neccecarry. You fight Zombies and eventually a boss. There is currently only one level, as a team we are considering an endless mode and additional levels if we have/had the time. 
 
 #### Stats
-Health: _
+Health: 30
 
 Damage: Weapon dependant
 
@@ -41,23 +41,23 @@ Pistol: 20 Damage
 
 Shotgun: 10 pellets a shot, 10 damage per pellet.
 
-### Zombie
-<!-- ![Zombie Image](byte-jam-26/Assets/) -->
+### Zombie: AKA Spot
+![Zombie Image](byte-jam-26/Assets/BB-Zombie-Img.png)
 
 This is the enemy, the zombie. This is the standard opponent you will face within the levels.
 
 #### Stats
 Health: 100
 
-Damage: _
+Damage: 10
 
-### Hoard Boss
+### Boss: AKA Beef
 <!-- ![Hoard Boss Image](byte-jam-26/Assets/) -->
 
-This is the final boss of the level currently. He is a large, disturbing monster.
+This is the final boss of the level currently. He is a large, disturbing monster. He has two main attacks, a vertical down slam and a horizontal swing or punch.
 
 #### Stats
 Health: 1500
 
-Damage: _
+Damage: 10
 
