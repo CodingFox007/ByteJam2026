@@ -1615,7 +1615,7 @@ repeat_size = Vector2(500, 0)
 repeat_times = 50
 
 [node name="01Sky" type="Sprite2D" parent="Parallax2D" unique_id=1741661221]
-position = Vector2(766, 132.25)
+position = Vector2(781, 133)
 scale = Vector2(1, 2.5638888)
 texture = ExtResource("1_lsmp6")
 

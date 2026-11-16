@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://cc06kau4urewx"]
+
+[ext_resource type="Script" uid="uid://dest24chvpgcf" path="res://Scripts/title_screen.gd" id="1_p3fck"]
+[ext_resource type="Texture2D" uid="uid://dn4ha4dgcauah" path="res://Assets/HomePage.png" id="2_4gxqj"]
+[ext_resource type="Texture2D" uid="uid://b1gwr5h2erv8j" path="res://Assets/AssetsSpritesheetV3.png" id="3_4gxqj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_27bay"]
+atlas = ExtResource("3_4gxqj")
+region = Rect2(1134, 1971, 162, 219)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1pe0h"]
+atlas = ExtResource("3_4gxqj")
+region = Rect2(0, 1971, 162, 219)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_twnyg"]
+animations = [{
+"frames": [],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_27bay")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1pe0h")
+}],
+"loop": 1,
+"name": &"idleAnimation",
+"speed": 1.0
+}]
+
+[node name="TitleScreen" type="Control" unique_id=688847454]
+layout_mode = 3
+anchor_left = -0.093
+anchor_right = 1.0
+anchor_bottom = 0.952
+offset_left = 106.136
+offset_top = 7.0
+offset_right = 71.0
+offset_bottom = 191.104
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_p3fck")
+
+[node name="HomePage" type="Sprite2D" parent="." unique_id=1196744653]
+position = Vector2(667.5, 288.25)
+scale = Vector2(0.8702153, 0.8156217)
+texture = ExtResource("2_4gxqj")
+
+[node name="Play" type="Button" parent="HomePage" unique_id=2078799686]
+offset_left = -477.0
+offset_top = 60.0
+offset_right = -148.0
+offset_bottom = 294.0
+flat = true
+
+[node name="Idle" type="AnimatedSprite2D" parent="." unique_id=722354943]
+texture_filter = 5
+position = Vector2(1071.2201, 493.49243)
+rotation = -0.6824237
+scale = Vector2(2.9108634, 2.799018)
+sprite_frames = SubResource("SpriteFrames_twnyg")
+animation = &"idleAnimation"
+
+[connection signal="pressed" from="HomePage/Play" to="." method="_on_play_pressed"]
