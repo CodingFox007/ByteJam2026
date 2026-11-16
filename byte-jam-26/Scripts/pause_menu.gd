@@ -11,8 +11,12 @@ func _ready() -> void:
 
 
 func _input(event: InputEvent) -> void:
-	if event.is_action_pressed("pause") and not event.is_echo():
+	var death_screen = get_tree().current_scene.get_node_or_null("DeathUI/DeathScreen")
 
+	if death_screen != null and death_screen.visible:
+		return
+
+	if event.is_action_pressed("pause") and not event.is_echo():
 		if get_tree().paused:
 			resume_game()
 		else:

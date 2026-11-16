@@ -222,6 +222,7 @@ func take_damage(amount: int = 1) -> void:
 		can_take_damage = true
 
 
+
 func die() -> void:
 	if is_dead:
 		return
@@ -229,4 +230,7 @@ func die() -> void:
 	is_dead = true
 	print("Player died!")
 
-	get_tree().reload_current_scene()
+	var death_screen = get_tree().current_scene.get_node("DeathUI/DeathScreen")
+
+	if death_screen:
+		death_screen.show_death_screen()

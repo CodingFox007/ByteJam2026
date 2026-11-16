@@ -14,6 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://daj160a5dm3o8" path="res://Scenes/pause_menu.tscn" id="11_af3po"]
 [ext_resource type="Texture2D" uid="uid://c523gmjiuq713" path="res://Assets/GoodHeart.png" id="12_6ioyp"]
 [ext_resource type="Texture2D" uid="uid://cioals5i4lcge" path="res://Assets/BadHeart.png" id="13_6ioyp"]
+[ext_resource type="PackedScene" uid="uid://cqcste2tnhy54" path="res://Scenes/death_screen.tscn" id="15_oovug"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bjebc"]
 texture = ExtResource("6_j7kpp")
@@ -1711,27 +1712,27 @@ full_heart = ExtResource("12_6ioyp")
 damaged_heart = ExtResource("13_6ioyp")
 
 [node name="HeartContainer" type="HBoxContainer" parent="HUD" unique_id=1000943070]
-offset_left = 19.0
-offset_top = 19.0
-offset_right = 59.0
-offset_bottom = 59.0
+offset_left = 30.0
+offset_top = 975.0
+offset_right = 263.0
+offset_bottom = 1050.0
 
 [node name="Heart1" type="TextureRect" parent="HUD/HeartContainer" unique_id=634875408]
-custom_minimum_size = Vector2(40, 40)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
 texture = ExtResource("12_6ioyp")
 expand_mode = 1
 stretch_mode = 5
 
 [node name="Heart2" type="TextureRect" parent="HUD/HeartContainer" unique_id=1118354529]
-custom_minimum_size = Vector2(40, 40)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
 texture = ExtResource("12_6ioyp")
 expand_mode = 1
 stretch_mode = 5
 
 [node name="Heart3" type="TextureRect" parent="HUD/HeartContainer" unique_id=223464855]
-custom_minimum_size = Vector2(40, 40)
+custom_minimum_size = Vector2(75, 75)
 layout_mode = 2
 texture = ExtResource("12_6ioyp")
 expand_mode = 1
@@ -1742,3 +1743,8 @@ layer = 10
 
 [node name="PauseMenu" parent="CanvasLayer" unique_id=1778314687 instance=ExtResource("11_af3po")]
 visible = false
+
+[node name="DeathUI" type="CanvasLayer" parent="." unique_id=382022689]
+layer = 20
+
+[node name="DeathScreen" parent="DeathUI" unique_id=1059203895 instance=ExtResource("15_oovug")]
