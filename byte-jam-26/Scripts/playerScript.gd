@@ -35,15 +35,6 @@ func _physics_process(delta: float) -> void:
 	if direction:
 		velocity.x = direction * SPEED
 
-		# Remember which direction player faces
-		if direction > 0:
-			facing_direction = 1
-		else:
-			facing_direction = -1
-
-		# Flip player sprite
-		animation.flip_h = facing_direction == -1
-
 		# Flip weapon holder
 		weapon_holder.scale.x = facing_direction
 
