@@ -3,8 +3,6 @@ extends CharacterBody2D
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 
-
-@onready var animation = $AnimatedSprite2D
 @onready var walk: AnimatedSprite2D = $AnimationHolder/Walk
 @onready var jump: AnimatedSprite2D = $AnimationHolder/Jump
 @onready var idle: AnimatedSprite2D = $AnimationHolder/Idle
