@@ -126,6 +126,11 @@ bg_color = Color(0.6664311, 0, 0.15264854, 1)
 texture_filter = 1
 position = Vector2(-2.4070787, 13.499996)
 scale = Vector2(0.705998, 0.72455084)
+floor_stop_on_slope = false
+floor_block_on_wall = false
+floor_max_angle = 1.5865043
+floor_snap_length = 16.0
+safe_margin = 2.0
 script = ExtResource("2_afpow")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="zombie" unique_id=848464868]
@@ -150,7 +155,7 @@ wait_time = 0.473
 one_shot = true
 
 [node name="ZombieAttackBox" type="CollisionShape2D" parent="zombie/zombieHitbox" unique_id=1318404829]
-position = Vector2(12.40947, 13.744368)
+position = Vector2(19.491646, 12.3642025)
 scale = Vector2(1, 0.9999999)
 shape = SubResource("RectangleShape2D_boc63")
 debug_color = Color(0.99827844, 0.03304277, 9.62615e-07, 0.42)
