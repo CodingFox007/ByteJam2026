@@ -30,4 +30,4 @@ scale = Vector2(0.33159122, 0.17137098)
 sprite_frames = SubResource("SpriteFrames_mfd4u")
 
 [node name="Interactable" parent="." unique_id=1937105403 instance=ExtResource("3_skybk")]
-position = Vector2(-40.00573, 0.2016983)
+position = Vector2(-4, 0)

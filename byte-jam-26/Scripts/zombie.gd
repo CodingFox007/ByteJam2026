@@ -4,6 +4,7 @@ extends CharacterBody2D
 # Zombie settings
 @export var gravity: float = 980.0
 @export var speed: float = 100.0
+@onready var health_bar: ProgressBar = $HealthBar
 
 var player: Node2D = null
 
@@ -13,10 +14,12 @@ var health: int
 
 func _ready() -> void:
 	health = max_health
+	health_bar.max_value = max_health
+	health_bar.value = health
 
 func take_damage(amount: int) -> void:
-	health -= amount
-	print("Zombie health: ", health)
+	health = max(health - amount, 0)
+	health_bar.value = health
 
 	if health <= 0:
 		die()
