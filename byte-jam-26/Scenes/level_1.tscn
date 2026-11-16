@@ -223,7 +223,7 @@ animations = [{
 }],
 "loop": 1,
 "name": &"walkAnimation",
-"speed": 6.0
+"speed": 4.0
 }]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1pe0h"]
@@ -250,7 +250,7 @@ animations = [{
 }],
 "loop": 1,
 "name": &"idleAnimation",
-"speed": 5.0
+"speed": 1.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bjebc"]
@@ -1856,8 +1856,9 @@ script = ExtResource("5_j7kpp")
 [node name="AnimationHolder" type="Node2D" parent="Player" unique_id=1623097651]
 
 [node name="Walk" type="AnimatedSprite2D" parent="Player/AnimationHolder" unique_id=1896975739]
+visible = false
 texture_filter = 1
-position = Vector2(39, 432)
+position = Vector2(23, 439.00003)
 scale = Vector2(0.53364843, 0.5078955)
 sprite_frames = SubResource("SpriteFrames_5rr72")
 animation = &"walkAnimation"
@@ -1872,7 +1873,6 @@ animation = &"jumpAnimation"
 frame = 1
 
 [node name="Idle" type="AnimatedSprite2D" parent="Player/AnimationHolder" unique_id=231831262]
-visible = false
 position = Vector2(36, 422)
 scale = Vector2(0.52, 0.52)
 sprite_frames = SubResource("SpriteFrames_mrpel")

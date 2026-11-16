@@ -37,6 +37,7 @@ func _physics_process(delta: float) -> void:
 		
 	if velocity.x == 0 and is_on_floor():
 		idleAnimation()
+		idle.play("idleAnimation")
 			
 	# Add the gravity and play jump.
 	if not is_on_floor():
