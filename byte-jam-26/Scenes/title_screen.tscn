@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://cc06kau4urewx"]
 
-[ext_resource type="Script" uid="uid://dest24chvpgcf" path="res://Scripts/title_screen.gd" id="1_p3fck"]
+[ext_resource type="Script" uid="uid://0wfy06qnqkjc" path="res://Scripts/title_screen.gd" id="1_p3fck"]
 [ext_resource type="Texture2D" uid="uid://dn4ha4dgcauah" path="res://Assets/HomePage.png" id="2_4gxqj"]
 [ext_resource type="Texture2D" uid="uid://b1gwr5h2erv8j" path="res://Assets/AssetsSpritesheetV3.png" id="3_4gxqj"]
+[ext_resource type="Texture2D" uid="uid://b2y2gt5wbg4dd" path="res://Assets/Quit.png" id="4_twnyg"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_27bay"]
 atlas = ExtResource("3_4gxqj")
@@ -49,12 +50,24 @@ position = Vector2(667.5, 288.25)
 scale = Vector2(0.8702153, 0.8156217)
 texture = ExtResource("2_4gxqj")
 
+[node name="QuitSign" type="Sprite2D" parent="HomePage" unique_id=1808361811]
+position = Vector2(-32.75055, 230.1925)
+scale = Vector2(1.149141, 1.1204976)
+texture = ExtResource("4_twnyg")
+
 [node name="Play" type="Button" parent="HomePage" unique_id=2078799686]
 offset_left = -477.0
 offset_top = 60.0
 offset_right = -148.0
 offset_bottom = 294.0
 flat = true
+
+[node name="Quit" type="Button" parent="HomePage" unique_id=404928138]
+offset_left = -154.55945
+offset_top = 172.56769
+offset_right = 21.259094
+offset_bottom = 312.33844
+theme_type_variation = &"FlatButton"
 
 [node name="Idle" type="AnimatedSprite2D" parent="." unique_id=722354943]
 texture_filter = 5
@@ -65,3 +78,4 @@ sprite_frames = SubResource("SpriteFrames_twnyg")
 animation = &"idleAnimation"
 
 [connection signal="pressed" from="HomePage/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="HomePage/Quit" to="." method="_on_quit_pressed"]
