@@ -1,32 +1,32 @@
 extends CharacterBody2D
 
-const SPEED = 300.0
-const JUMP_VELOCITY = -400.0
+@export var knockback_distance: float = 100.0
+@export var knockback_duration: float = 0.2
+@export var walk_hand_offset: Vector2 = Vector2(12, -2)
+@export var idle_hand_offset: Vector2 = Vector2(-5, 10)
+@export var jump_hand_offset: Vector2 = Vector2(-10, -5)
+@export var starting_weapon: PackedScene
+@export var max_health: int = 3
+@export var hit_cooldown: float = 1.0
 
 @onready var walk: AnimatedSprite2D = $AnimationHolder/Walk
 @onready var jump: AnimatedSprite2D = $AnimationHolder/Jump
 @onready var idle: AnimatedSprite2D = $AnimationHolder/Idle
 @onready var hurt: AnimatedSprite2D = $AnimationHolder/Hurt
-
-var is_hurt: bool = false
-
-@export var walk_hand_offset: Vector2 = Vector2(12, -2)
-@export var idle_hand_offset: Vector2 = Vector2(-5, 10)
-@export var jump_hand_offset: Vector2 = Vector2(-10, -5)
-
-@export var starting_weapon: PackedScene
-
 @onready var weapon_holder: Node2D = $WeaponHolder
 
+const SPEED = 300.0
+const JUMP_VELOCITY = -400.0
+
+var knockback_velocity: float = 0.0
+var knockback_time_left: float = 0.0
+var is_hurt: bool = false
 var current_weapon: Weapon
-signal health_changed(current_health: int)
-
-@export var max_health: int = 3
-@export var hit_cooldown: float = 1.0
-
 var health: int = 3
 var can_take_damage: bool = true
 var is_dead: bool = false
+
+signal health_changed(current_health: int)
 
 # Functions for animation
 func jumpAnimation():
@@ -75,6 +75,15 @@ func idleAnimation():
 	idle.show()
 	idle.animation = "idleAnimation"
 			
+func apply_knockback(zombie_position: Vector2) -> void:
+	var direction: float = sign(global_position.x - zombie_position.x)
+
+	# Default to right if both characters share the same X position
+	if direction == 0:
+		direction = 1.0
+
+	knockback_velocity = direction * (knockback_distance / knockback_duration)
+	knockback_time_left = knockback_duration
 
 func _physics_process(delta: float) -> void:
 	if is_dead:
@@ -102,12 +111,17 @@ func _physics_process(delta: float) -> void:
 		velocity.y = JUMP_VELOCITY
 
 	# Handle horizontal movement
-	var get_direction := Input.get_axis("left", "right")
-
-	if get_direction:
-		velocity.x = get_direction * SPEED
+	if knockback_time_left > 0.0:
+		# Temporarily override movement during knockback
+		velocity.x = knockback_velocity
+		knockback_time_left = maxf(knockback_time_left - delta, 0.0)
 	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
+		# Normal player movement
+		var get_direction := Input.get_axis("left", "right")
+		if get_direction:
+			velocity.x = get_direction * SPEED
+		else:
+			velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
 

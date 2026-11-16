@@ -59,6 +59,11 @@ func hit_player() -> void:
 		if player_in_range.can_take_damage:
 			player_in_range.take_damage(1)
 
+			# Push player away from zombie
+			if player_in_range.has_method("apply_knockback"):
+				player_in_range.apply_knockback(zombie.global_position)
+
+			# Play hurt animation
 			if player_in_range.has_method("hurtAnimation"):
 				player_in_range.hurtAnimation()
 
