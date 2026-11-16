@@ -57,7 +57,7 @@ offset_bottom = 294.0
 flat = true
 
 [node name="Idle" type="AnimatedSprite2D" parent="." unique_id=722354943]
-texture_filter = 1
+texture_filter = 5
 position = Vector2(1071.2201, 493.49243)
 rotation = -0.6824237
 scale = Vector2(2.9108634, 2.799018)
