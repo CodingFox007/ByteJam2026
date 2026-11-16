@@ -1,0 +1,39 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://lyoye4olp3ee"]
+
+[ext_resource type="Texture2D" uid="uid://b5cpf8myfw1wa" path="res://Assets/PlayerJumpSpritesheet.png" id="1_u2psh"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cvoot"]
+atlas = ExtResource("1_u2psh")
+region = Rect2(178, 209, 178, 209)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eyebw"]
+atlas = ExtResource("1_u2psh")
+region = Rect2(178, 0, 178, 209)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_racl7"]
+atlas = ExtResource("1_u2psh")
+region = Rect2(0, 0, 178, 209)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h8fn0"]
+atlas = ExtResource("1_u2psh")
+region = Rect2(356, 0, 178, 209)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cvoot")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eyebw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_racl7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h8fn0")
+}],
+"loop": 1,
+"name": &"jumpAnimation",
+"speed": 3.0
+}]
