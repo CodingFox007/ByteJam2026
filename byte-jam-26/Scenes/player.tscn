@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://cgq2r8o3xuf4j" path="res://Scenes/Weapons/pistol.tscn" id="2_6t5aa"]
 [ext_resource type="Texture2D" uid="uid://b1gwr5h2erv8j" path="res://Assets/AssetsSpritesheetV3.png" id="3_fkybt"]
 [ext_resource type="SpriteFrames" uid="uid://lyoye4olp3ee" path="res://Assets/PlayerJumpSpritesheet.tres" id="3_vgqql"]
+[ext_resource type="PackedScene" uid="uid://bwhq0a8kejn8j" path="res://interaction_components/interacting_component.tscn" id="5_fkybt"]
 
 [sub_resource type="AtlasTexture" id="atlas_0"]
 atlas = ExtResource("3_fkybt")
@@ -303,3 +304,6 @@ limit_bottom = 800
 
 [node name="WeaponHolder" type="Node2D" parent="." unique_id=813623613]
 position = Vector2(27, 430)
+
+[node name="InteractingComponent" parent="." unique_id=1246646135 instance=ExtResource("5_fkybt")]
+position = Vector2(19, 455)

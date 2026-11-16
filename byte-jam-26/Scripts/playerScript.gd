@@ -93,17 +93,18 @@ func equip_weapon(weapon_scene: PackedScene) -> void:
 	if weapon_scene == null:
 		return
 
+	var new_weapon = weapon_scene.instantiate() as Weapon
+
+	if new_weapon == null:
+		push_error("Invalid weapon scene!")
+		return
+
 	if current_weapon != null:
 		current_weapon.queue_free()
 
-	current_weapon = weapon_scene.instantiate() as Weapon
-
-	if current_weapon == null:
-		push_error("Weapon scene must use the Weapon script.")
-		return
-
-	weapon_holder.add_child(current_weapon)
-	current_weapon.position = Vector2.ZERO
+	weapon_holder.add_child(new_weapon)
+	new_weapon.position = Vector2.ZERO
+	current_weapon = new_weapon
 		
 func update_weapon_position() -> void:
 	var active_sprite: AnimatedSprite2D

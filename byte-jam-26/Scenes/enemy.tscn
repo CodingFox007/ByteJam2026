@@ -62,6 +62,12 @@ size = Vector2(160.05713, 74.18391)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8wb0i"]
 size = Vector2(3899.4448, 739.9624)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_afpow"]
+bg_color = Color(0.18000486, 0.1800049, 0.18000478, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_287tu"]
+bg_color = Color(0.6664311, 0, 0.15264854, 1)
+
 [node name="Zombie" type="Node2D" unique_id=1441788404]
 
 [node name="zombie" type="CharacterBody2D" parent="." unique_id=2007749563 groups=["zombie"]]
@@ -105,6 +111,17 @@ visible = false
 position = Vector2(618.85034, -10.351234)
 scale = Vector2(0.9999999, 0.9999999)
 shape = SubResource("RectangleShape2D_8wb0i")
+
+[node name="HealthBar" type="ProgressBar" parent="zombie" unique_id=1506494620]
+custom_minimum_size = Vector2(60, 8)
+offset_left = -22.086351
+offset_top = -98.681816
+offset_right = 37.91365
+offset_bottom = -90.681816
+theme_override_styles/background = SubResource("StyleBoxFlat_afpow")
+theme_override_styles/fill = SubResource("StyleBoxFlat_287tu")
+value = 100.0
+show_percentage = false
 
 [connection signal="body_entered" from="zombie/zombieHitbox" to="zombie/zombieHitbox" method="_on_body_entered"]
 [connection signal="timeout" from="zombie/zombieHitbox/Timer" to="zombie/zombieHitbox" method="_on_timer_timeout"]
