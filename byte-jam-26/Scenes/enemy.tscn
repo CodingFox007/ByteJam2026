@@ -4,6 +4,30 @@
 [ext_resource type="Script" uid="uid://jjfil1a0hatt" path="res://Scripts/zombie_hitbox.gd" id="2_1f0kj"]
 [ext_resource type="Script" uid="uid://7j0ipkli6c8g" path="res://Scripts/zombie.gd" id="2_afpow"]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_auwsv"]
+atlas = ExtResource("1_hghv2")
+region = Rect2(2268, 501, 126, 167)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8uf12"]
+atlas = ExtResource("1_hghv2")
+region = Rect2(2268, 448, 126, 159)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_po0sg"]
+atlas = ExtResource("1_hghv2")
+region = Rect2(2268, 413, 126, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_haro7"]
+atlas = ExtResource("1_hghv2")
+region = Rect2(2268, 370, 126, 163)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_56vhr"]
+atlas = ExtResource("1_hghv2")
+region = Rect2(1135, 504, 126, 174)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ta2yt"]
+atlas = ExtResource("1_hghv2")
+region = Rect2(2269, 504, 126, 174)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_ghaa6"]
 atlas = ExtResource("1_hghv2")
 region = Rect2(3400, 0, 85, 159)
@@ -26,6 +50,34 @@ region = Rect2(3402, 501, 81, 167)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_wwb70"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_auwsv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8uf12")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_po0sg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_haro7")
+}],
+"loop": 0,
+"name": &"zombieDeath",
+"speed": 9.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_56vhr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ta2yt")
+}],
+"loop": 1,
+"name": &"zombieHit",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 50.0,
 "texture": SubResource("AtlasTexture_ghaa6")
@@ -74,11 +126,16 @@ bg_color = Color(0.6664311, 0, 0.15264854, 1)
 texture_filter = 1
 position = Vector2(-2.4070787, 13.499996)
 scale = Vector2(0.705998, 0.72455084)
+floor_stop_on_slope = false
+floor_block_on_wall = false
+floor_max_angle = 1.5865043
+floor_snap_length = 16.0
+safe_margin = 2.0
 script = ExtResource("2_afpow")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="zombie" unique_id=848464868]
-position = Vector2(0.57660043, -0.6900778)
-scale = Vector2(1.0186942, 1)
+position = Vector2(0.5766008, -2.070243)
+scale = Vector2(1.0186942, 1.0035902)
 sprite_frames = SubResource("SpriteFrames_wwb70")
 animation = &"zombieWalking"
 
@@ -98,7 +155,7 @@ wait_time = 0.473
 one_shot = true
 
 [node name="ZombieAttackBox" type="CollisionShape2D" parent="zombie/zombieHitbox" unique_id=1318404829]
-position = Vector2(12.40947, 13.744368)
+position = Vector2(19.491646, 12.3642025)
 scale = Vector2(1, 0.9999999)
 shape = SubResource("RectangleShape2D_boc63")
 debug_color = Color(0.99827844, 0.03304277, 9.62615e-07, 0.42)

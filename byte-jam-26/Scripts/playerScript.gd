@@ -6,6 +6,8 @@ const JUMP_VELOCITY = -400.0
 @onready var walk: AnimatedSprite2D = $AnimationHolder/Walk
 @onready var jump: AnimatedSprite2D = $AnimationHolder/Jump
 @onready var idle: AnimatedSprite2D = $AnimationHolder/Idle
+@onready var hurt: AnimatedSprite2D = $AnimationHolder/Hurt
+
 @export var walk_hand_offset: Vector2 = Vector2(12, -2)
 @export var idle_hand_offset: Vector2 = Vector2(-5, 10)
 @export var jump_hand_offset: Vector2 = Vector2(-10, -5)
@@ -25,6 +27,13 @@ func jumpAnimation():
 	if not jump.is_playing():
 		jump.play()
 		
+func hurtAnimation():
+	walk.hide()
+	idle.hide()
+	jump.hide()
+	hurt.show()
+	hurt.play("hurtAnimation")
+	
 func walkAnimation():
 	jump.hide()
 	idle.hide()
@@ -46,6 +55,7 @@ func _physics_process(delta: float) -> void:
 		
 	if velocity.x == 0 and is_on_floor():
 		idleAnimation()
+		idle.play("idleAnimation")
 			
 	# Add the gravity and play jump.
 	if not is_on_floor():
