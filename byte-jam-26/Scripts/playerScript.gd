@@ -6,6 +6,15 @@ const JUMP_VELOCITY = -400.0
 @onready var walk: AnimatedSprite2D = $AnimationHolder/Walk
 @onready var jump: AnimatedSprite2D = $AnimationHolder/Jump
 @onready var idle: AnimatedSprite2D = $AnimationHolder/Idle
+@export var walk_hand_offset: Vector2 = Vector2(12, -2)
+@export var idle_hand_offset: Vector2 = Vector2(-5, 10)
+@export var jump_hand_offset: Vector2 = Vector2(-10, -5)
+
+@export var starting_weapon: PackedScene
+
+@onready var weapon_holder: Node2D = $WeaponHolder
+
+var current_weapon: Weapon
 
 # Functions for animation
 func jumpAnimation():
@@ -65,8 +74,65 @@ func _physics_process(delta: float) -> void:
 		walk.flip_h = false
 		idle.flip_h = false
 		jump.flip_h = false
-
 		
-		
+	# Flip gun with character
+	if walk.flip_h:
+		weapon_holder.scale.x = -1.0
+	else:
+		weapon_holder.scale.x = 1.0
 
+	update_weapon_position()
+	
+	update_weapon_position()
+
+func _ready() -> void:
+	equip_weapon(starting_weapon)
+
+
+func equip_weapon(weapon_scene: PackedScene) -> void:
+	if weapon_scene == null:
+		return
+
+	if current_weapon != null:
+		current_weapon.queue_free()
+
+	current_weapon = weapon_scene.instantiate() as Weapon
+
+	if current_weapon == null:
+		push_error("Weapon scene must use the Weapon script.")
+		return
+
+	weapon_holder.add_child(current_weapon)
+	current_weapon.position = Vector2.ZERO
+		
+func update_weapon_position() -> void:
+	var active_sprite: AnimatedSprite2D
+	var hand_offset: Vector2
+
+	if jump.visible:
+		active_sprite = jump
+		hand_offset = jump_hand_offset
+	elif walk.visible:
+		active_sprite = walk
+		hand_offset = walk_hand_offset
+	else:
+		active_sprite = idle
+		hand_offset = idle_hand_offset
+
+	var facing_left = active_sprite.flip_h
+
+	var offset_x = hand_offset.x
+	if facing_left:
+		offset_x = -offset_x
+
+	weapon_holder.position = active_sprite.position + Vector2(offset_x, hand_offset.y)
+
+
+func _process(_delta: float) -> void:
+	if current_weapon == null:
+		return
+
+	if Input.is_action_pressed("shoot"):
+		var direction = -1 if walk.flip_h else 1
+		current_weapon.shoot(direction)
 	
