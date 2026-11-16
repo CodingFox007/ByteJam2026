@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://b6srrtyjgbl5f" path="res://Tiles/city_tileset_64.png" id="8_bjebc"]
 [ext_resource type="PackedScene" uid="uid://cfxrvu7mhfkkm" path="res://Scenes/BottomOfMap.tscn" id="8_xrdnt"]
 [ext_resource type="PackedScene" uid="uid://c631ytftbd2x4" path="res://Scenes/enemy.tscn" id="9_wrinw"]
+[ext_resource type="PackedScene" uid="uid://daj160a5dm3o8" path="res://Scenes/pause_menu.tscn" id="11_af3po"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bjebc"]
 texture = ExtResource("6_j7kpp")
@@ -1670,7 +1671,7 @@ y_sort_origin = 1
 x_draw_order_reversed = true
 
 [node name="Player" parent="." unique_id=1882964120 instance=ExtResource("7_lsmp6")]
-position = Vector2(81, -42)
+position = Vector2(-71, 138)
 
 [node name="TileMapLayer3" type="TileMapLayer" parent="." unique_id=442886006]
 y_sort_enabled = true
@@ -1686,10 +1687,21 @@ position = Vector2(570, 1213)
 shape = SubResource("WorldBoundaryShape2D_boc63")
 
 [node name="Zombie" parent="." unique_id=1441788404 instance=ExtResource("9_wrinw")]
-position = Vector2(1400, 434)
+position = Vector2(657, 563)
 
 [node name="Zombie2" parent="." unique_id=1825210692 instance=ExtResource("9_wrinw")]
-position = Vector2(1563, 400)
+position = Vector2(1229, 496)
+
+[node name="Zombie3" parent="." unique_id=816205915 instance=ExtResource("9_wrinw")]
+position = Vector2(1510, 412)
+
+[node name="Zombie4" parent="." unique_id=1655414134 instance=ExtResource("9_wrinw")]
+position = Vector2(1795, 413)
 
 [node name="ShotgunPickup" parent="." unique_id=980105988 instance=ExtResource("4_chwpn")]
-position = Vector2(305, 534)
+position = Vector2(99, 604)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2086266005]
+layer = 10
+
+[node name="PauseMenu" parent="CanvasLayer" unique_id=1778314687 instance=ExtResource("11_af3po")]
