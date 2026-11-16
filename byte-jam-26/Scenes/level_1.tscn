@@ -1,4 +1,4 @@
-[gd_scene format=4 uid="uid://bn56b6w0a8fpa"]
+[gd_scene format=4 uid="uid://dm2ymj6viwhnj"]
 
 [ext_resource type="Texture2D" uid="uid://dn2vb32l7iavn" path="res://LevelOneBackground/01_sky.png" id="1_lsmp6"]
 [ext_resource type="Texture2D" uid="uid://cwd0j2h7qncpf" path="res://LevelOneBackground/00_sun.png" id="2_rka8t"]
@@ -7,6 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://22xrgrtmqpi8" path="res://Tiles/ground_tiles_128x64.png" id="6_j7kpp"]
 [ext_resource type="PackedScene" uid="uid://bnf6pks4mum13" path="res://Scenes/player.tscn" id="7_lsmp6"]
 [ext_resource type="Texture2D" uid="uid://b6srrtyjgbl5f" path="res://Tiles/city_tileset_64.png" id="8_bjebc"]
+[ext_resource type="PackedScene" uid="uid://cfxrvu7mhfkkm" path="res://Scenes/BottomOfMap.tscn" id="8_xrdnt"]
+[ext_resource type="PackedScene" uid="uid://c631ytftbd2x4" path="res://Scenes/enemy.tscn" id="9_wrinw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bjebc"]
 texture = ExtResource("6_j7kpp")
@@ -1602,6 +1604,8 @@ terrain_set_1/terrain_1/color = Color(0.99215686, 0.4392157, 0.9607843, 1)
 sources/0 = SubResource("TileSetAtlasSource_bjebc")
 sources/1 = SubResource("TileSetAtlasSource_5rr72")
 
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_boc63"]
+
 [node name="Level1" type="Node2D" unique_id=926407240]
 
 [node name="Parallax2D" type="Parallax2D" parent="." unique_id=1879566310]
@@ -1611,8 +1615,8 @@ repeat_size = Vector2(500, 0)
 repeat_times = 50
 
 [node name="01Sky" type="Sprite2D" parent="Parallax2D" unique_id=1741661221]
-position = Vector2(766, 380)
-scale = Vector2(1, 1.6462963)
+position = Vector2(766, 132.25)
+scale = Vector2(1, 2.5638888)
 texture = ExtResource("1_lsmp6")
 
 [node name="Parallax2D4" type="Parallax2D" parent="." unique_id=1409446761]
@@ -1630,7 +1634,7 @@ repeat_size = Vector2(1500, 0)
 repeat_times = 50
 
 [node name="03Far" type="Sprite2D" parent="Parallax2D2" unique_id=35667729]
-position = Vector2(783, 486)
+position = Vector2(783, 455)
 texture = ExtResource("3_5hph3")
 
 [node name="Parallax2D3" type="Parallax2D" parent="." unique_id=541928533]
@@ -1640,7 +1644,7 @@ repeat_size = Vector2(1500, 0)
 repeat_times = 50
 
 [node name="04Mid" type="Sprite2D" parent="Parallax2D3" unique_id=1981877478]
-position = Vector2(783, 486)
+position = Vector2(786, 508)
 texture = ExtResource("4_j7kpp")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1456756674]
@@ -1649,3 +1653,12 @@ tile_set = SubResource("TileSet_mrpel")
 
 [node name="Player" parent="." unique_id=1882964120 instance=ExtResource("7_lsmp6")]
 position = Vector2(47, 59)
+
+[node name="killZone" parent="." unique_id=612461458 instance=ExtResource("8_xrdnt")]
+position = Vector2(570, 1213)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="killZone" unique_id=1293244022]
+shape = SubResource("WorldBoundaryShape2D_boc63")
+
+[node name="Node2D" parent="." unique_id=1441788404 instance=ExtResource("9_wrinw")]
+position = Vector2(1391, 395)

@@ -64,7 +64,7 @@ size = Vector2(3899.4448, 739.9624)
 
 [node name="Node2D" type="Node2D" unique_id=1441788404]
 
-[node name="zombie" type="CharacterBody2D" parent="." unique_id=2007749563]
+[node name="zombie" type="CharacterBody2D" parent="." unique_id=2007749563 groups=["zombie"]]
 texture_filter = 1
 position = Vector2(-2.4070787, 13.499996)
 scale = Vector2(0.705998, 0.72455084)

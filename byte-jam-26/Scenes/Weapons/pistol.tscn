@@ -30,3 +30,4 @@ scale = Vector2(0.20744683, 0.13839287)
 sprite_frames = SubResource("SpriteFrames_boc63")
 
 [node name="BulletSpawn" type="Marker2D" parent="." unique_id=1412053204]
+position = Vector2(22, -6)

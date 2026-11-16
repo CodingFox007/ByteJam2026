@@ -8,6 +8,21 @@ extends CharacterBody2D
 var player: Node2D = null
 
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
+@export var max_health: int = 100
+var health: int
+
+func _ready() -> void:
+	health = max_health
+
+func take_damage(amount: int) -> void:
+	health -= amount
+	print("Zombie health: ", health)
+
+	if health <= 0:
+		die()
+
+func die() -> void:
+	queue_free()
 
 func _physics_process(delta: float) -> void:
 	# Apply gravity
