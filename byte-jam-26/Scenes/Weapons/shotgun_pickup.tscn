@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://dom0wb26ayfp0"]
+
+[ext_resource type="Script" uid="uid://bf67xlqd8s7d1" path="res://Scripts/shotgun_pickup.gd" id="1_nwgyl"]
+[ext_resource type="PackedScene" uid="uid://dhc8mphdysb3u" path="res://Scenes/Weapons/shotgun.tscn" id="2_skybk"]
+[ext_resource type="Texture2D" uid="uid://b1gwr5h2erv8j" path="res://Assets/AssetsSpritesheetV3.png" id="3_mfd4u"]
+[ext_resource type="PackedScene" uid="uid://46kcf21qxda6" path="res://interaction_components/interactable.tscn" id="3_skybk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xvtdo"]
+atlas = ExtResource("3_mfd4u")
+region = Rect2(413, 1017, 275, 124)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mfd4u"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xvtdo")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="ShotgunPickup" type="Node2D" unique_id=980105988]
+script = ExtResource("1_nwgyl")
+weapon_scene = ExtResource("2_skybk")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1489095104]
+position = Vector2(-1.9073486e-06, -2.3841858e-07)
+scale = Vector2(0.33159122, 0.17137098)
+sprite_frames = SubResource("SpriteFrames_mfd4u")
+
+[node name="Interactable" parent="." unique_id=1937105403 instance=ExtResource("3_skybk")]
+position = Vector2(-40.00573, 0.2016983)

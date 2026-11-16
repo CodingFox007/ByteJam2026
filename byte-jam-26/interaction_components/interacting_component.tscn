@@ -16,7 +16,7 @@ script = ExtResource("1_xa01l")
 z_index = 10
 position = Vector2(-1, 0)
 collision_layer = 0
-collision_mask = 2
+collision_mask = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractRange" unique_id=290244879]
 shape = SubResource("CircleShape2D_kixfj")

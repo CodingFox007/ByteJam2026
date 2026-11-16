@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://dn2vb32l7iavn" path="res://LevelOneBackground/01_sky.png" id="1_lsmp6"]
 [ext_resource type="Texture2D" uid="uid://cwd0j2h7qncpf" path="res://LevelOneBackground/00_sun.png" id="2_rka8t"]
 [ext_resource type="Texture2D" uid="uid://d3p2ucmxheob2" path="res://LevelOneBackground/03_far.png" id="3_5hph3"]
+[ext_resource type="PackedScene" uid="uid://dom0wb26ayfp0" path="res://Scenes/Weapons/shotgun_pickup.tscn" id="4_chwpn"]
 [ext_resource type="Texture2D" uid="uid://8yeev0vf1jfo" path="res://LevelOneBackground/04_mid.png" id="4_j7kpp"]
 [ext_resource type="Texture2D" uid="uid://22xrgrtmqpi8" path="res://Tiles/ground_tiles_128x64.png" id="6_j7kpp"]
 [ext_resource type="PackedScene" uid="uid://bnf6pks4mum13" path="res://Scenes/player.tscn" id="7_lsmp6"]
@@ -1637,6 +1638,9 @@ repeat_times = 50
 position = Vector2(783, 455)
 texture = ExtResource("3_5hph3")
 
+[node name="ShotgunPickup" parent="Parallax2D2" unique_id=980105988 instance=ExtResource("4_chwpn")]
+position = Vector2(1645, 523)
+
 [node name="Parallax2D3" type="Parallax2D" parent="." unique_id=541928533]
 scroll_scale = Vector2(1.15, 1.3)
 scroll_offset = Vector2(160, 11)
@@ -1652,7 +1656,7 @@ tile_map_data = PackedByteArray("AABnADAAAQAXAAAAAABnAC8AAQAXAAAAAABnAC4AAQAXAAA
 tile_set = SubResource("TileSet_mrpel")
 
 [node name="Player" parent="." unique_id=1882964120 instance=ExtResource("7_lsmp6")]
-position = Vector2(47, 59)
+position = Vector2(81, -42)
 
 [node name="killZone" parent="." unique_id=612461458 instance=ExtResource("8_xrdnt")]
 position = Vector2(570, 1213)
@@ -1661,7 +1665,7 @@ position = Vector2(570, 1213)
 shape = SubResource("WorldBoundaryShape2D_boc63")
 
 [node name="Zombie" parent="." unique_id=1441788404 instance=ExtResource("9_wrinw")]
-position = Vector2(1364, 463)
+position = Vector2(1408, 471)
 
 [node name="Zombie2" parent="." unique_id=1825210692 instance=ExtResource("9_wrinw")]
-position = Vector2(1192, 467)
+position = Vector2(1553, 469)
