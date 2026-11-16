@@ -1660,5 +1660,8 @@ position = Vector2(570, 1213)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="killZone" unique_id=1293244022]
 shape = SubResource("WorldBoundaryShape2D_boc63")
 
-[node name="Node2D" parent="." unique_id=1441788404 instance=ExtResource("9_wrinw")]
-position = Vector2(1391, 395)
+[node name="Zombie" parent="." unique_id=1441788404 instance=ExtResource("9_wrinw")]
+position = Vector2(1364, 463)
+
+[node name="Zombie2" parent="." unique_id=1825210692 instance=ExtResource("9_wrinw")]
+position = Vector2(1192, 467)

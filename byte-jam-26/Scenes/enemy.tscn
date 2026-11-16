@@ -62,7 +62,7 @@ size = Vector2(160.05713, 74.18391)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8wb0i"]
 size = Vector2(3899.4448, 739.9624)
 
-[node name="Node2D" type="Node2D" unique_id=1441788404]
+[node name="Zombie" type="Node2D" unique_id=1441788404]
 
 [node name="zombie" type="CharacterBody2D" parent="." unique_id=2007749563 groups=["zombie"]]
 texture_filter = 1
