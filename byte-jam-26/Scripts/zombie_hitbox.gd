@@ -1,5 +1,7 @@
 
 extends Area2D
+const PlayerScript = preload("uid://cdcqlo355sbhs")
+
 
 @onready var timer: Timer = $Timer
 @onready var zombie = get_parent()
@@ -11,7 +13,10 @@ func _on_body_entered(body: Node2D) -> void:
 
 		# Tell zombie to start attacking
 		zombie.player_in_killzone = true
-
+		if zombie.player_in_killzone == true:
+			if body.has_method("hurtAnimation"):
+				body.hurtAnimation()
+		
 		# Start the kill timer
 		timer.start()
 
