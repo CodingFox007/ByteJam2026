@@ -11,6 +11,7 @@ func _on_body_entered(body: Node2D) -> void:
 
 		# Tell zombie to start attacking
 		zombie.player_in_killzone = true
+		
 
 		# Start the kill timer
 		timer.start()
