@@ -10,7 +10,10 @@
 [ext_resource type="Texture2D" uid="uid://b6srrtyjgbl5f" path="res://Tiles/city_tileset_64.png" id="8_bjebc"]
 [ext_resource type="PackedScene" uid="uid://cfxrvu7mhfkkm" path="res://Scenes/BottomOfMap.tscn" id="8_xrdnt"]
 [ext_resource type="PackedScene" uid="uid://c631ytftbd2x4" path="res://Scenes/enemy.tscn" id="9_wrinw"]
+[ext_resource type="Script" uid="uid://jsb65ixgj5ug" path="res://Scripts/hud.gd" id="11_6r07y"]
 [ext_resource type="PackedScene" uid="uid://daj160a5dm3o8" path="res://Scenes/pause_menu.tscn" id="11_af3po"]
+[ext_resource type="Texture2D" uid="uid://c523gmjiuq713" path="res://Assets/GoodHeart.png" id="12_6ioyp"]
+[ext_resource type="Texture2D" uid="uid://cioals5i4lcge" path="res://Assets/BadHeart.png" id="13_6ioyp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bjebc"]
 texture = ExtResource("6_j7kpp")
@@ -1684,6 +1687,7 @@ x_draw_order_reversed = true
 position = Vector2(570, 1213)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="killZone" unique_id=1293244022]
+position = Vector2(-8, -101)
 shape = SubResource("WorldBoundaryShape2D_boc63")
 
 [node name="Zombie" parent="." unique_id=1441788404 instance=ExtResource("9_wrinw")]
@@ -1701,7 +1705,40 @@ position = Vector2(1795, 413)
 [node name="ShotgunPickup" parent="." unique_id=980105988 instance=ExtResource("4_chwpn")]
 position = Vector2(99, 604)
 
+[node name="HUD" type="CanvasLayer" parent="." unique_id=98845143]
+script = ExtResource("11_6r07y")
+full_heart = ExtResource("12_6ioyp")
+damaged_heart = ExtResource("13_6ioyp")
+
+[node name="HeartContainer" type="HBoxContainer" parent="HUD" unique_id=1000943070]
+offset_left = 19.0
+offset_top = 19.0
+offset_right = 59.0
+offset_bottom = 59.0
+
+[node name="Heart1" type="TextureRect" parent="HUD/HeartContainer" unique_id=634875408]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+texture = ExtResource("12_6ioyp")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Heart2" type="TextureRect" parent="HUD/HeartContainer" unique_id=1118354529]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+texture = ExtResource("12_6ioyp")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Heart3" type="TextureRect" parent="HUD/HeartContainer" unique_id=223464855]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+texture = ExtResource("12_6ioyp")
+expand_mode = 1
+stretch_mode = 5
+
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2086266005]
 layer = 10
 
 [node name="PauseMenu" parent="CanvasLayer" unique_id=1778314687 instance=ExtResource("11_af3po")]
+visible = false

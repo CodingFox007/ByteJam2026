@@ -304,6 +304,7 @@ metadata/_edit_vertical_guides_ = [-239.0]
 [node name="AnimationHolder" type="Node2D" parent="." unique_id=381045401]
 
 [node name="Walk" type="AnimatedSprite2D" parent="AnimationHolder" unique_id=88724274]
+visible = false
 texture_filter = 1
 position = Vector2(16, 434)
 scale = Vector2(0.55445546, 0.5048543)
@@ -333,6 +334,8 @@ position = Vector2(10, 422)
 scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_yby75")
 animation = &"hurtAnimation"
+frame = 2
+frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1817958479]
 position = Vector2(18, 432)

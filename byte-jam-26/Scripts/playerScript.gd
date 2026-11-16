@@ -8,6 +8,8 @@ const JUMP_VELOCITY = -400.0
 @onready var idle: AnimatedSprite2D = $AnimationHolder/Idle
 @onready var hurt: AnimatedSprite2D = $AnimationHolder/Hurt
 
+var is_hurt: bool = false
+
 @export var walk_hand_offset: Vector2 = Vector2(12, -2)
 @export var idle_hand_offset: Vector2 = Vector2(-5, 10)
 @export var jump_hand_offset: Vector2 = Vector2(-10, -5)
@@ -17,6 +19,14 @@ const JUMP_VELOCITY = -400.0
 @onready var weapon_holder: Node2D = $WeaponHolder
 
 var current_weapon: Weapon
+signal health_changed(current_health: int)
+
+@export var max_health: int = 3
+@export var hit_cooldown: float = 1.0
+
+var health: int = 3
+var can_take_damage: bool = true
+var is_dead: bool = false
 
 # Functions for animation
 func jumpAnimation():
@@ -27,12 +37,31 @@ func jumpAnimation():
 	if not jump.is_playing():
 		jump.play()
 		
-func hurtAnimation():
+
+func hurtAnimation() -> void:
+	if is_hurt or is_dead:
+		return
+
+	is_hurt = true
+
+	# Hide all normal sprites
 	walk.hide()
 	idle.hide()
 	jump.hide()
+
+	# Show hurt animation
+	hurt.flip_h = walk.flip_h
 	hurt.show()
 	hurt.play("hurtAnimation")
+
+	# Wait for animation to finish
+	await hurt.animation_finished
+
+	# Hide hurt sprite
+	hurt.hide()
+
+	is_hurt = false
+
 	
 func walkAnimation():
 	jump.hide()
@@ -46,45 +75,55 @@ func idleAnimation():
 	idle.show()
 	idle.animation = "idleAnimation"
 			
+
 func _physics_process(delta: float) -> void:
-	
-	# Add animations
-	if velocity.x > 1 or velocity.x < -1 and is_on_floor():
-		walkAnimation()
-		walk.play("walkAnimation")
-		
-	if velocity.x == 0 and is_on_floor():
-		idleAnimation()
-		idle.play("idleAnimation")
-			
-	# Add the gravity and play jump.
+	if is_dead:
+		return
+
+	# Only play normal animations when player isn't hurt
+	if not is_hurt:
+		if not is_on_floor():
+			jumpAnimation()
+
+		elif abs(velocity.x) > 1:
+			walkAnimation()
+			walk.play("walkAnimation")
+
+		else:
+			idleAnimation()
+			idle.play("idleAnimation")
+
+	# Add gravity
 	if not is_on_floor():
 		velocity += get_gravity() * delta
-		jumpAnimation()
 
-	# Handle jump.
+	# Handle jump
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 
-	# Get the input direction and handle the movement/deceleration.
+	# Handle horizontal movement
 	var get_direction := Input.get_axis("left", "right")
+
 	if get_direction:
 		velocity.x = get_direction * SPEED
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
-		
+
 	move_and_slide()
-	
-	# Flip Sprite
+
+	# Flip character sprites
 	if velocity.x < 0:
 		walk.flip_h = true
 		idle.flip_h = true
 		jump.flip_h = true
+		hurt.flip_h = true
+
 	elif velocity.x > 0:
 		walk.flip_h = false
 		idle.flip_h = false
 		jump.flip_h = false
-		
+		hurt.flip_h = false
+
 	# Flip gun with character
 	if walk.flip_h:
 		weapon_holder.scale.x = -1.0
@@ -92,11 +131,12 @@ func _physics_process(delta: float) -> void:
 		weapon_holder.scale.x = 1.0
 
 	update_weapon_position()
-	
-	update_weapon_position()
+
 
 func _ready() -> void:
+	health = max_health
 	equip_weapon(starting_weapon)
+	health_changed.emit(health)
 
 
 func equip_weapon(weapon_scene: PackedScene) -> void:
@@ -147,3 +187,32 @@ func _process(_delta: float) -> void:
 		var direction = -1 if walk.flip_h else 1
 		current_weapon.shoot(direction)
 	
+
+func take_damage(amount: int = 1) -> void:
+	if not can_take_damage or is_dead:
+		return
+
+	health = max(health - amount, 0)
+	health_changed.emit(health)
+
+	print("Player health: ", health)
+
+	if health <= 0:
+		die()
+		return
+
+	can_take_damage = false
+	await get_tree().create_timer(hit_cooldown, false).timeout
+
+	if not is_dead:
+		can_take_damage = true
+
+
+func die() -> void:
+	if is_dead:
+		return
+
+	is_dead = true
+	print("Player died!")
+
+	get_tree().reload_current_scene()

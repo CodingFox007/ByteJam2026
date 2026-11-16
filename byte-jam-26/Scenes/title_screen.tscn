@@ -46,8 +46,8 @@ grow_vertical = 2
 script = ExtResource("1_p3fck")
 
 [node name="HomePage" type="Sprite2D" parent="." unique_id=1196744653]
-position = Vector2(667.5, 288.25)
-scale = Vector2(0.8702153, 0.8156217)
+position = Vector2(1033.0327, 534.3288)
+scale = Vector2(1.1464013, 1.1470163)
 texture = ExtResource("2_4gxqj")
 
 [node name="QuitSign" type="Sprite2D" parent="HomePage" unique_id=1808361811]
@@ -71,9 +71,9 @@ theme_type_variation = &"FlatButton"
 
 [node name="Idle" type="AnimatedSprite2D" parent="." unique_id=722354943]
 texture_filter = 5
-position = Vector2(1071.2201, 493.49243)
+position = Vector2(1618.424, 884.99994)
 rotation = -0.6824237
-scale = Vector2(2.9108634, 2.799018)
+scale = Vector2(3.415985, 3.4602036)
 sprite_frames = SubResource("SpriteFrames_twnyg")
 animation = &"idleAnimation"
 

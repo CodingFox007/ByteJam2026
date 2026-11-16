@@ -74,7 +74,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_ta2yt")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"zombieHit",
 "speed": 5.0
 }, {
@@ -137,7 +137,7 @@ script = ExtResource("2_afpow")
 position = Vector2(0.5766008, -2.070243)
 scale = Vector2(1.0186942, 1.0035902)
 sprite_frames = SubResource("SpriteFrames_wwb70")
-animation = &"zombieWalking"
+animation = &"zombieHit"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="zombie" unique_id=1382609662]
 position = Vector2(6.242339, -10.351235)
