@@ -321,7 +321,6 @@ animation = &"jumpAnimation"
 frame = 1
 
 [node name="Idle" type="AnimatedSprite2D" parent="AnimationHolder" unique_id=1962284334]
-visible = false
 position = Vector2(36, 422)
 scale = Vector2(0.52, 0.52)
 sprite_frames = SubResource("SpriteFrames_x3wgy")

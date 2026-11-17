@@ -1703,8 +1703,53 @@ position = Vector2(1510, 412)
 [node name="Zombie4" parent="." unique_id=1655414134 instance=ExtResource("9_wrinw")]
 position = Vector2(1795, 413)
 
+[node name="Zombie5" parent="." unique_id=739847464 instance=ExtResource("9_wrinw")]
+position = Vector2(1956, 421)
+
+[node name="Zombie6" parent="." unique_id=2057847693 instance=ExtResource("9_wrinw")]
+position = Vector2(2480, 607)
+
+[node name="Zombie7" parent="." unique_id=1655094046 instance=ExtResource("9_wrinw")]
+position = Vector2(2608, 602)
+
+[node name="Zombie8" parent="." unique_id=1241730205 instance=ExtResource("9_wrinw")]
+position = Vector2(2749, 603)
+
+[node name="Zombie10" parent="." unique_id=1482009962 instance=ExtResource("9_wrinw")]
+position = Vector2(4722, 673)
+
+[node name="Zombie11" parent="." unique_id=114388211 instance=ExtResource("9_wrinw")]
+position = Vector2(4585, 676)
+
+[node name="Zombie12" parent="." unique_id=602124255 instance=ExtResource("9_wrinw")]
+position = Vector2(4441, 675)
+
+[node name="Zombie13" parent="." unique_id=229609773 instance=ExtResource("9_wrinw")]
+position = Vector2(4317, 674)
+
+[node name="Zombie14" parent="." unique_id=102046555 instance=ExtResource("9_wrinw")]
+position = Vector2(4175, 670)
+
+[node name="Zombie15" parent="." unique_id=569301965 instance=ExtResource("9_wrinw")]
+position = Vector2(4034, 671)
+
+[node name="Zombie16" parent="." unique_id=1760100057 instance=ExtResource("9_wrinw")]
+position = Vector2(3890, 675)
+
+[node name="Zombie17" parent="." unique_id=283668695 instance=ExtResource("9_wrinw")]
+position = Vector2(3737, 674)
+
+[node name="Zombie18" parent="." unique_id=719990258 instance=ExtResource("9_wrinw")]
+position = Vector2(3801, 514)
+
+[node name="Zombie19" parent="." unique_id=1553260673 instance=ExtResource("9_wrinw")]
+position = Vector2(4659, 507)
+
+[node name="Zombie20" parent="." unique_id=1134014482 instance=ExtResource("9_wrinw")]
+position = Vector2(4236, 503)
+
 [node name="ShotgunPickup" parent="." unique_id=980105988 instance=ExtResource("4_chwpn")]
-position = Vector2(99, 604)
+position = Vector2(2749, 623)
 
 [node name="HUD" type="CanvasLayer" parent="." unique_id=98845143]
 script = ExtResource("11_6r07y")
