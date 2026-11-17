@@ -1,5 +1,15 @@
 # Bandana Billy<!-- : Apocalypse Survival Specialist -->
 ## By *The Undead Programmers*
+# Controls 
+## Keyboard
+WASD or Arrows = Movement 
+Space or Up = Jump
+E = interact
+
+## Controller
+Square = Interact 
+A = Jump
+Joystick = Move
 
 Members<!-- : Caleb Seieroe, Cash Cooper, Chalan Zugg, Draven Livingston, and Ethan Umphress -->
 <ul>
