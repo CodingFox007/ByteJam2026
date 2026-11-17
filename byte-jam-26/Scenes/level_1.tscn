@@ -1617,7 +1617,7 @@ sources/1 = SubResource("TileSetAtlasSource_5rr72")
 [node name="Level1" type="Node2D" unique_id=926407240]
 
 [node name="Parallax2D" type="Parallax2D" parent="." unique_id=1879566310]
-scroll_scale = Vector2(1, -0.1)
+scroll_scale = Vector2(-1, 0.1)
 scroll_offset = Vector2(160, 11)
 repeat_size = Vector2(500, 0)
 repeat_times = 50
@@ -1628,15 +1628,14 @@ scale = Vector2(1, 2.5638888)
 texture = ExtResource("1_lsmp6")
 
 [node name="Parallax2D4" type="Parallax2D" parent="." unique_id=1409446761]
-scroll_scale = Vector2(0, 1)
-scroll_offset = Vector2(160, 11)
+scroll_scale = Vector2(0, 0)
 
 [node name="00Sun" type="Sprite2D" parent="Parallax2D4" unique_id=1843096742]
-position = Vector2(-8, 330)
+position = Vector2(237, 311)
 texture = ExtResource("2_rka8t")
 
 [node name="Parallax2D2" type="Parallax2D" parent="." unique_id=239538268]
-scroll_scale = Vector2(1.1, 1)
+scroll_scale = Vector2(0.8, 0.727)
 scroll_offset = Vector2(160, 11)
 repeat_size = Vector2(1500, 0)
 repeat_times = 50
@@ -1646,8 +1645,8 @@ position = Vector2(783, 455)
 texture = ExtResource("3_5hph3")
 
 [node name="Parallax2D3" type="Parallax2D" parent="." unique_id=541928533]
-scroll_scale = Vector2(1.15, 1.3)
-scroll_offset = Vector2(160, 11)
+scroll_scale = Vector2(1, 1.131)
+scroll_offset = Vector2(160, 150)
 repeat_size = Vector2(1500, 0)
 repeat_times = 50
 

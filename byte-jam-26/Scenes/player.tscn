@@ -6,6 +6,7 @@
 [ext_resource type="SpriteFrames" uid="uid://lyoye4olp3ee" path="res://Assets/PlayerJumpSpritesheet.tres" id="3_vgqql"]
 [ext_resource type="PackedScene" uid="uid://bwhq0a8kejn8j" path="res://interaction_components/interacting_component.tscn" id="5_fkybt"]
 [ext_resource type="Texture2D" uid="uid://cb5sf2trc3sy" path="res://Assets/PlayerHurt/PlayerHurt.png" id="5_x3wgy"]
+[ext_resource type="AudioStream" uid="uid://qyiiw20e4djo" path="res://Audio/Music/Background/EndlessMusic/Sandstorm3Hearts.mp3" id="6_3smsa"]
 
 [sub_resource type="AtlasTexture" id="atlas_0"]
 atlas = ExtResource("3_fkybt")
@@ -342,7 +343,13 @@ shape = SubResource("CapsuleShape2D_bjebc")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1645304818]
 position = Vector2(375, 263)
-limit_bottom = 800
+zoom = Vector2(1.3, 1.3)
+limit_top = -10000003
+limit_bottom = 797
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Camera2D" unique_id=982763482]
+stream = ExtResource("6_3smsa")
+autoplay = true
 
 [node name="WeaponHolder" type="Node2D" parent="." unique_id=813623613]
 position = Vector2(27, 430)
